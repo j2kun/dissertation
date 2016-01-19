@@ -1,0 +1,6 @@
+.DS_Store
+.logged
+*.aux
+*.blg
+*.out
+*.lof
