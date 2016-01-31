@@ -8,6 +8,11 @@
 %     supported       = "Send email to suchow@post.harvard.edu.",
 %     docstring       = "Class for a dissertation."
 % --------------------------------------------------------------------
+%
+% This Dissertation template was modified by Jeremy Kun (UIC, Ph.D May 2016)
+% for his own dissertation at the University of Illinois at Chicago, Department
+% of Mathematics, Statistics, and Computer Science.
+%
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Dissertate}[2014/03/25 v2.0 Dissertate Class]
@@ -24,27 +29,58 @@
 \RequirePackage{setspace}
 \RequirePackage{verbatim}
 
-% Fonts.
+% Math
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{problem}{Problem}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{proposition}{Proposition}
+\newtheorem{observation}{Observation}
+\newtheorem{remark}{Remark}
+
+% Source code listings
+\RequirePackage{listings}
+\lstset{ %
+  basicstyle=\linespread{0.8}\ttfamily\footnotesize,
+  breakatwhitespace=true,
+  breaklines=true,
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text
+  language=Python, 
+  numbers=left,                    
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny
+}
+
+% Fonts
 \RequirePackage{color}
 \usepackage{hyperref}
 \RequirePackage{url}
 \RequirePackage{amssymb}
+\RequirePackage{amsfonts}
 \RequirePackage{mathspec}
-\setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{EB Garamond}
-\setmathrm{EB Garamond}
+\setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{Minion Pro}
+\setmathrm{Minion Pro}
 \widowpenalty=300
 \clubpenalty=300
-\setromanfont[Numbers=OldStyle, Ligatures={Common, TeX}, Scale=1.0]{EB Garamond}
-\newfontfamily{\smallcaps}[RawFeature={+c2sc,+scmp}]{EB Garamond}
+\setromanfont[Numbers=OldStyle, Ligatures={Common, TeX}, Scale=1.0]{Minion Pro}
+\newfontfamily{\smallcaps}[RawFeature={+c2sc,+scmp}]{Minion Pro}
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Source Code Pro}
-\RequirePackage[labelfont={bf,sf,footnotesize,singlespacing},
-                textfont={sf,footnotesize,singlespacing},
+\RequirePackage[labelfont={bf,rm,footnotesize,singlespacing},
+                textfont={rm,footnotesize,singlespacing},
                 justification={justified,RaggedRight},
                 singlelinecheck=false,
                 margin=0pt,
                 figurewithin=chapter,
                 tablewithin=chapter]{caption}
+\RequirePackage{subcaption}
+\RequirePackage{floatrow}
+\RequirePackage{booktabs}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 % Headings and headers.
@@ -73,6 +109,8 @@
 \RequirePackage[palatino]{quotchap}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-0.5\baselineskip}}
 \renewcommand*{\chapterheadendvskip}{\vspace{1.3\baselineskip}}
+
+
 
 % An environment for paragraph-style section.
 \providecommand\newthought[1]{%
@@ -211,3 +249,8 @@
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
 }
+
+
+% math shortcuts
+\newcommand{\ind}[1]{\textbf{1}_{\left \{ #1 \right \}}}
+\DeclareMathOperator*{\argmin}{\arg\!\min}

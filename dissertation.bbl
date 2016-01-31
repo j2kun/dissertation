@@ -1,14 +1,389 @@
 \begin{thebibliography}{}
 
-\bibitem[Eigen, 1971]{Eigen1971}
-Eigen, M. (1971).
-\newblock Selforganization of matter and the evolution of biological
-  macromolecules.
-\newblock {\em Naturwissenschaften}, 58(10), 465--523.
+\bibitem[Ackerman \& Ben-David, 2009]{AckermanB09}
+Ackerman, M. \& Ben-David, S. (2009).
+\newblock Clusterability: A theoretical study.
+\newblock {\em Journal of Machine Learning Research - Proceedings Track}, 5,
+  1--8.
 
-\bibitem[Knuth, 1968]{Knuth1968}
-Knuth, D.~E. (1968).
-\newblock Semantics of context-free languages.
-\newblock {\em Mathematical Systems Theory}, 2(2), 127--145.
+\bibitem[Aharoni et~al., 1990]{AharoniMP90}
+Aharoni, R., Milner, E.~C., \& Prikry, K. (1990).
+\newblock Unfriendly partitions of a graph.
+\newblock {\em J. Comb. Theory, Ser. B}, 50(1), 1--10.
+
+\bibitem[Andoni et~al., 2014]{AndoniNOY14}
+Andoni, A., Nikolov, A., Onak, K., \& Yaroslavtsev, G. (2014).
+\newblock Parallel algorithms for geometric graph problems.
+\newblock In {\em STOC}  (pp.\ 574--583).
+
+\bibitem[Arora \& Ge, 2011]{Arora11}
+Arora, S. \& Ge, R. (2011).
+\newblock New tools for graph coloring.
+\newblock In {\em APPROX-RANDOM}  (pp.\ 1--12).
+
+\bibitem[Awasthi et~al., 2012]{ABS10}
+Awasthi, P., Blum, A., \& Sheffet, O. (2012).
+\newblock Center-based clustering under perturbation stability.
+\newblock {\em Inf. Process. Lett.}, 112(1-2), 49--54.
+
+\bibitem[Bazgan et~al., 2010]{BazganTV10}
+Bazgan, C., Tuza, Z., \& Vanderpooten, D. (2010).
+\newblock Satisfactory graph partition, variants, and generalizations.
+\newblock {\em Eur. J. Oper. Res.}, 206(2), 271--280.
+
+\bibitem[Beame et~al., 2013]{BeameKS13}
+Beame, P., Koutris, P., \& Suciu, D. (2013).
+\newblock Communication steps for parallel query processing.
+\newblock In {\em PODS}  (pp.\ 273--284).
+
+\bibitem[Berger \& Rompel, 1990]{BR90}
+Berger, B. \& Rompel, J. (1990).
+\newblock A better performance guarantee for approximate graph coloring.
+\newblock {\em Algorithmica}, 5(3), 459--466.
+
+\bibitem[Bilu \& Linial, 2012]{BL12}
+Bilu, Y. \& Linial, N. (2012).
+\newblock Are stable instances easy?
+\newblock {\em Combinatorics, Probability {\&} Computing}, 21(5), 643--660.
+
+\bibitem[Blum, 1994]{Blum94}
+Blum, A. (1994).
+\newblock New approximation algorithms for graph coloring.
+\newblock {\em J. ACM}, 41(3), 470--516.
+
+\bibitem[Bramoull{\'e} et~al., 2004]{BramoulleLGV04}
+Bramoull{\'e}, Y., L{\'o}pez-Pintado, D., Goyal, S., \& Vega-Redondo, F.
+  (2004).
+\newblock Network formation and anti-coordination games.
+\newblock {\em Int. J. Game Theory}, 33(1), 1--19.
+
+\bibitem[Bruhn et~al., 2010]{BruhnDGS10}
+Bruhn, H., Diestel, R., Georgakopoulos, A., \& Spr{\"u}ssel, P. (2010).
+\newblock Every rayless graph has an unfriendly partition.
+\newblock {\em Combinatorica}, 30(5), 521--532.
+
+\bibitem[Cai, 2003]{Cai03}
+Cai, L. (2003).
+\newblock Parameterized complexity of vertex colouring.
+\newblock {\em Discrete Applied Mathematics}, 127(3), 415--429.
+
+\bibitem[Cao \& Yang, 2012]{CaoY12a}
+Cao, Z. \& Yang, X. (2012).
+\newblock The fashion game: Matching pennies on social networks.
+\newblock {\em SSRN}.
+
+\bibitem[Chatzigiannakis et~al., 2010]{CKPS10}
+Chatzigiannakis, I., Koninis, C., Panagopoulou, P.~N., \& Spirakis, P.~G.
+  (2010).
+\newblock Distributed game-theoretic vertex coloring.
+\newblock In {\em OPODIS'10}  (pp.\ 103--118).
+
+\bibitem[Chaudhuri et~al., 2008]{ChaudhuriGJ08}
+Chaudhuri, K., Graham, F.~C., \& Jamall, M.~S. (2008).
+\newblock A network coloring game.
+\newblock In {\em WINE}  (pp.\ 522--530).
+
+\bibitem[Chu et~al., 2006]{ChuKLYBNO06}
+Chu, C.-T., Kim, S.~K., Lin, Y.-A., Yu, Y., Bradski, G.~R., Ng, A.~Y., \&
+  Olukotun, K. (2006).
+\newblock Map-reduce for machine learning on multicore.
+\newblock In {\em NIPS}  (pp.\ 281--288).
+
+\bibitem[Dailey, 1980]{Dailey80}
+Dailey, D.~P. (1980).
+\newblock Uniqueness of colorability and colorability of planar 4-regular
+  graphs are np-complete.
+\newblock {\em Discrete Mathematics}, 30(3), 289 -- 293.
+
+\bibitem[Dean \& Ghemawat, 2008]{DeanG08}
+Dean, J. \& Ghemawat, S. (2008).
+\newblock Mapreduce: simplified data processing on large clusters.
+\newblock {\em Commun. ACM}, 51(1), 107--113.
+
+\bibitem[Dinur et~al., 2009]{DMR06}
+Dinur, I., Mossel, E., \& Regev, O. (2009).
+\newblock Conditional hardness for approximate coloring.
+\newblock {\em SIAM J. Comput.}, 39(3), 843--873.
+
+\bibitem[Els{\"a}sser \& Tscheuschner, 2011]{ElsasserT11}
+Els{\"a}sser, R. \& Tscheuschner, T. (2011).
+\newblock Settling the complexity of local max-cut (almost) completely.
+\newblock In {\em ICALP (1)}  (pp.\ 171--182).
+
+\bibitem[Eppstein et~al., 2002]{EBH99}
+Eppstein, D., Bern, M.~W., \& Hutchings, B.~L. (2002).
+\newblock Algorithms for coloring quadtrees.
+\newblock {\em Algorithmica}, 32(1), 87--94.
+
+\bibitem[Escoffier et~al., 2010]{EGM12}
+Escoffier, B., Gourv\`{e}s, L., \& Monnot, J. (2010).
+\newblock Strategic coloring of a graph.
+\newblock In {\em CIAC'10}  (pp.\ 155--166).  Berlin, Heidelberg:
+  Springer-Verlag.
+
+\bibitem[Farahat et~al., 2013]{FEGK13}
+Farahat, A.~K., Elgohary, A., Ghodsi, A., \& Kamel, M.~S. (2013).
+\newblock Distributed column subset selection on mapreduce.
+\newblock In {\em ICDM}  (pp.\ 171--180).
+
+\bibitem[Feldman et~al., 2010]{FeldmanMSSS10}
+Feldman, J., Muthukrishnan, S., Sidiropoulos, A., Stein, C., \& Svitkina, Z.
+  (2010).
+\newblock On distributing symmetric streaming computations.
+\newblock {\em ACM Transactions on Algorithms}, 6(4).
+
+\bibitem[Fortnow, 2000]{Fortnow00}
+Fortnow, L. (2000).
+\newblock Time-space tradeoffs for satisfiability.
+\newblock {\em J. Comput. Syst. Sci.}, 60(2), 337--353.
+
+\bibitem[Fotakis et~al., 2002]{FKKMS02}
+Fotakis, D., Kontogiannis, S., Koutsoupias, E., Mavronicolas, M., \& Spirakis,
+  P. (2002).
+\newblock The structure and complexity of nash equilibria for a selfish routing
+  game.
+\newblock In {\em ICALP}  (pp.\ 123--134).  Malaga, Spain.
+
+\bibitem[Garey \& Johnson, 1976]{GJ76}
+Garey, M.~R. \& Johnson, D.~S. (1976).
+\newblock The complexity of near-optimal graph coloring.
+\newblock {\em J. ACM}, 23(1), 43--49.
+
+\bibitem[Garey \& Johnson, 1979]{GareyJ79}
+Garey, M.~R. \& Johnson, D.~S. (1979).
+\newblock {\em Computers and Intractability: A Guide to the Theory of
+  NP-Completeness}.
+\newblock New York, NY, USA: W. H. Freeman \& Co.
+
+\bibitem[Goodrich et~al., 2011]{GoodrichSZ11}
+Goodrich, M.~T., Sitchinava, N., \& Zhang, Q. (2011).
+\newblock Sorting, searching, and simulation in the mapreduce framework.
+\newblock In {\em ISAAC}  (pp.\ 374--383).
+
+\bibitem[Gourv\`{e}s \& Monnot, 2009]{G09}
+Gourv\`{e}s, L. \& Monnot, J. (2009).
+\newblock On strong equilibria in the max cut game.
+\newblock In {\em In: Proc. of WINE 2009, Springer LNCS}  (pp.\ 608--615).
+
+\bibitem[Guruswami \& Khanna, 2004]{GuKh2000}
+Guruswami, V. \& Khanna, S. (2004).
+\newblock On the hardness of 4-coloring a 3-colorable graph.
+\newblock {\em SIAM J. Discrete Math.}, 18(1), 30--40.
+
+\bibitem[Halld{\'o}rsson, 1993]{Ha93}
+Halld{\'o}rsson, M.~M. (1993).
+\newblock A still better performance guarantee for approximate graph coloring.
+\newblock {\em Inf. Process. Lett.}, 45(1), 19--23.
+
+\bibitem[H{\aa}stad, 1999]{Ha99}
+H{\aa}stad, J. (1999).
+\newblock Clique is hard to approximate within $n^{1-\varepsilon}$.
+\newblock {\em Acta Mathematica}, 182, 105--142.
+
+\bibitem[Ho{\`a}ng et~al., 2012]{HMM10}
+Ho{\`a}ng, C.~T., Maffray, F., \& Mechebbek, M. (2012).
+\newblock A characterization of b-perfect graphs.
+\newblock {\em Journal of Graph Theory}, 71(1), 95--122.
+
+\bibitem[Hoefer, 2007]{Hoefer2007}
+Hoefer, M. (2007).
+\newblock {\em Cost sharing and clustering under distributed competition}.
+\newblock PhD thesis, Universit{\"a}t Konstanz, Germany.
+
+\bibitem[Huang, 2013]{Huang13}
+Huang, S. (2013).
+\newblock Improved hardness of approximating chromatic number.
+\newblock {\em CoRR}, abs/1301.5216.
+
+\bibitem[Impagliazzo \& Paturi, 1999]{ImpagliazzoP99}
+Impagliazzo, R. \& Paturi, R. (1999).
+\newblock The complexity of k-sat.
+\newblock {\em 2012 IEEE 27th Conference on Computational Complexity}, 0, 237.
+
+\bibitem[Impagliazzo et~al., 2001]{ImpagliazzoPZ01}
+Impagliazzo, R., Paturi, R., \& Zane, F. (2001).
+\newblock Which problems have strongly exponential complexity?
+\newblock {\em J. Comput. Syst. Sci.}, 63(4), 512--530.
+
+\bibitem[Johnson, 1974]{Johnson74}
+Johnson, D.~S. (1974).
+\newblock Worst case behavior of graph coloring algorithms.
+\newblock In {\em Proc. 5th Southeastern Conf. on Comb., Graph Theory and
+  Comput.}  (pp.\ 513--527).
+
+\bibitem[Kamara \& Raykova, 2013]{KR13}
+Kamara, S. \& Raykova, M. (2013).
+\newblock Parallel homomorphic encryption.
+\newblock In {\em Financial Cryptography Workshops}  (pp.\ 213--225).
+
+\bibitem[Karloff et~al., 2010]{Karloff10}
+Karloff, H., Suri, S., \& Vassilvitskii, S. (2010).
+\newblock A model of computation for mapreduce.
+\newblock In {\em SODA '10}  (pp.\ 938--948).  Philadelphia, PA, USA: Society
+  for Industrial and Applied Mathematics.
+
+\bibitem[Karp, 1972]{Karp72}
+Karp, R.~M. (1972).
+\newblock Reducibility among combinatorial problems.
+\newblock In {\em Complexity of Computer Computations}  (pp.\ 85--103).
+
+\bibitem[Kawarabayashi \& Thorup, 2014]{KawarabayashiT14}
+Kawarabayashi, K. \& Thorup, M. (2014).
+\newblock Coloring 3-colorable graphs with $o(n^{1/5})$ colors.
+\newblock In {\em STACS}, volume~25  (pp.\ 458--469).
+
+\bibitem[Kearns et~al., 2006]{KearnsSM06}
+Kearns, M., Suri, S., \& Montfort, N. (2006).
+\newblock A behavioral study of the coloring problem on human subject networks.
+\newblock {\em Science}, 313, 2006.
+
+\bibitem[Khanna et~al., 2000]{KLS00}
+Khanna, S., Linial, N., \& Safra, S. (2000).
+\newblock On the hardness of approximating the chromatic number.
+\newblock {\em Combinatorica}, 20(3), 393--415.
+
+\bibitem[Khot, 2001]{Khot01}
+Khot, S. (2001).
+\newblock Improved inaproximability results for maxclique, chromatic number and
+  approximate graph coloring.
+\newblock In {\em FOCS}  (pp.\ 600--609).
+
+\bibitem[Kobler \& Rotics, 2003]{Ko03}
+Kobler, D. \& Rotics, U. (2003).
+\newblock Edge dominating set and colorings on graphs with fixed clique-width.
+\newblock {\em Discrete Applied Mathematics}, 126(2-3), 197--221.
+
+\bibitem[Koutsoupias \& Papadimitriou, 1999]{KP99}
+Koutsoupias, E. \& Papadimitriou, C. (1999).
+\newblock Worst-case equilibria.
+\newblock In {\em STACS}  (pp.\ 404--413).  Trier, Germany.
+
+\bibitem[Kr{\'a}l et~al., 2001]{KKTW01}
+Kr{\'a}l, D., Kratochv\'{\i}l, J., Tuza, Z., \& Woeginger, G.~J. (2001).
+\newblock Complexity of coloring graphs without forbidden induced subgraphs.
+\newblock In {\em WG}  (pp.\ 254--262).
+
+\bibitem[Kumar et~al., 2013]{KMVV13}
+Kumar, R., Moseley, B., Vassilvitskii, S., \& Vattani, A. (2013).
+\newblock Fast greedy algorithms in mapreduce and streaming.
+\newblock In {\em SPAA '13}  (pp.\ 1--10).  New York, NY, USA: ACM.
+
+\bibitem[Kumar, 1992]{Kumar92}
+Kumar, V. (1992).
+\newblock Algorithms for constraint-satisfaction problems: A survey.
+\newblock {\em AI magazine}, 13(1), 32.
+
+\bibitem[Kun et~al., 2013]{KunPR13}
+Kun, J., Powers, B., \& Reyzin, L. (2013).
+\newblock Anti-coordination games and stable graph colorings.
+\newblock In {\em SAGT}  (pp.\ 122--133).
+
+\bibitem[Lokshtanov et~al., 2011]{LokshtanovMS11}
+Lokshtanov, D., Marx, D., \& Saurabh, S. (2011).
+\newblock Lower bounds based on the exponential time hypothesis.
+\newblock {\em Bulletin of the {EATCS}}, 105, 41--72.
+
+\bibitem[Mihal{\'a}k et~al., 2011]{MSSW11}
+Mihal{\'a}k, M., Sch{\"o}ngens, M., Sr{\'a}mek, R., \& Widmayer, P. (2011).
+\newblock On the complexity of the metric tsp under stability considerations.
+\newblock In {\em SOFSEM}  (pp.\ 382--393).
+
+\bibitem[Monderer \& Shapley, 1996]{M96}
+Monderer, D. \& Shapley, L.~S. (1996).
+\newblock Potential games.
+\newblock {\em Games and Economic Behavior}, 14(1), 124 -- 143.
+
+\bibitem[Monien \& Tscheuschner, 2010]{MonienT10}
+Monien, B. \& Tscheuschner, T. (2010).
+\newblock On the power of nodes of degree four in the local max-cut problem.
+\newblock In {\em CIAC}  (pp.\ 264--275).
+
+\bibitem[Naor \& Stockmeyer, 1993]{NaorS93}
+Naor, M. \& Stockmeyer, L. (1993).
+\newblock What can be computed locally?
+\newblock In {\em STOC '93}  (pp.\ 184--193).: ACM.
+
+\bibitem[Pace, 2012]{Pace12}
+Pace, M.~F. (2012).
+\newblock {BSP} vs mapreduce.
+\newblock In {\em Proceedings of the International Conference on Computational
+  Science, {ICCS} 2012, Omaha, Nebraska, USA, 4-6 June, 2012}  (pp.\ 246--255).
+
+\bibitem[Panagopoulou \& Spirakis, 2008]{PS08}
+Panagopoulou, P.~N. \& Spirakis, P.~G. (2008).
+\newblock A game theoretic approach for efficient graph coloring.
+\newblock In {\em ISAAC '08}  (pp.\ 183--195).
+
+\bibitem[Reyzin, 2012]{Rey11}
+Reyzin, L. (2012).
+\newblock Data stability in clustering: A closer look.
+\newblock In {\em ALT}  (pp.\ 184--198).
+
+\bibitem[Roughgarden \& Tardos, 2002]{RT02}
+Roughgarden, T. \& Tardos, E. (2002).
+\newblock How bad is selfish routing?
+\newblock {\em J. ACM}, 49(2), 236--259.
+
+\bibitem[Sarma et~al., 2013]{Sarma13}
+Sarma, A.~D., Afrati, F.~N., Salihoglu, S., \& Ullman, J.~D. (2013).
+\newblock Upper and lower bounds on the cost of a map-reduce computation.
+\newblock In {\em PVLDB'13}  (pp.\ 277--288).: VLDB Endowment.
+
+\bibitem[Shafique \& Dutton, 2009]{ShafiqueD09}
+Shafique, K. \& Dutton, R.~D. (2009).
+\newblock Partitioning a graph into alliance free sets.
+\newblock {\em Discrete Mathematics}, 309(10), 3102--3105.
+
+\bibitem[Shelah \& Milner, 1990]{ShelahM90}
+Shelah, S. \& Milner, E.~C. (1990).
+\newblock Graphs with no unfriendly partitions.
+\newblock {\em A tribute to Paul Erd{\"o}s}, (pp.\ 373--384).
+
+\bibitem[Shepherdson, 1959]{Shepherdson59}
+Shepherdson, J.~C. (1959).
+\newblock The reduction of two-way automata to one-way automata.
+\newblock {\em IBM J. Res. Dev.}, 3(2), 198--200.
+
+\bibitem[Shvachko et~al., 2010]{ShvachkoKRC10}
+Shvachko, K., Kuang, H., Radia, S., \& Chansler, R. (2010).
+\newblock The hadoop distributed file system.
+\newblock In M.~G. Khatib, X. He, \& M. Factor (Eds.), {\em MSST}  (pp.\
+  1--10).: IEEE Computer Society.
+
+\bibitem[Szepietowski, 1994]{szepietowski1994turing}
+Szepietowski, A. (1994).
+\newblock {\em Turing Machines with Sublogarithmic Space}.
+\newblock Ernst Schering Research Foundation Workshops. Springer.
+
+\bibitem[Valiant, 1990]{Valiant90}
+Valiant, L.~G. (1990).
+\newblock A bridging model for parallel computation.
+\newblock {\em Commun. ACM}, 33(8), 103--111.
+
+\bibitem[van~den Heuvel et~al., 1998]{vandenHeuvel98}
+van~den Heuvel, J., Leese, R.~A., \& Shepherd, M.~A. (1998).
+\newblock Graph labeling and radio channel assignment.
+\newblock {\em J. Graph Theory}, 29(4), 263--283.
+
+\bibitem[Wagner \& Wechsung, 1986]{WagnerW86}
+Wagner, K. \& Wechsung, G. (1986).
+\newblock {\em Computational Complexity}.
+\newblock Mathematics and its Applications. Springer.
+
+\bibitem[Wigderson, 1983]{Wi83}
+Wigderson, A. (1983).
+\newblock Improving the performance guarantee for approximate graph coloring.
+\newblock {\em J. ACM}, 30(4), 729--735.
+
+\bibitem[Williams, 2008]{Williams08}
+Williams, R. (2008).
+\newblock Time-space tradeoffs for counting {NP} solutions modulo integers.
+\newblock {\em Computational Complexity}, 17(2), 179--219.
+
+\bibitem[Zuckerman, 2007]{Zu07}
+Zuckerman, D. (2007).
+\newblock Linear degree extractors and the inapproximability of max clique and
+  chromatic number.
+\newblock {\em Theory of Computing}, 3(1), 103--128.
 
 \end{thebibliography}

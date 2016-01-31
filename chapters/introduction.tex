@@ -1,16 +1,46 @@
 \chapter{Introduction}
 \label{introduction}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+This dissertation contains selected work of the author over the course of
+his graduate studies, focusing on the study of computational complexity in new
+models. The models studied concern graphs, networks, and the relation between
+the global and distributed computation computation of some quantity.
 
-Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.
+In the first chapter we discuss \emph{anti-coordination} games played on
+graphs. These are games in which players (nodes) are connected by edges, and
+the players are incentivized to choose strategies that differ from their
+neighbors. We study the price of anarchy, which measures the tradeoff between
+players acting independently and greedily versus a central planning authority.
+We introduce a directed graph generalization which allows one to model both
+anti-coordination and coordination incentives. We further prove that the
+complexity of computing strategies with certain properties (akin to being a
+certain kind of Nash equilibrium) is NP-hard.
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
+In the second chapter we introduce a new model for measuring the complexity of
+a combinatorial decision problem called \emph{resilience}. Loosely speaking, an
+instance of a problem is resilient if it is satisfiable and remains satisfiable
+under small adversarial manipulations. For graph coloring, this corresponds to
+a graph which is, say, 3-colorable and remains so even after an adversary adds
+an arbitrary edge to the graph. In general, we ask how resilient a problem must
+be in order to make finding solutions tractable. Surprisingly, for the previous
+example of graph 3-coloring, it remains NP-hard to find a 3-coloring. We
+further study the gradient between hardness and tractability for resilient
+coloring. We also completely characterize the complexity of resilient boolean
+satisfiability: it is either vacuous or NP-hard.
 
-Cras sed ante. Phasellus in massa. Curabitur dolor eros, gravida et, hendrerit ac, cursus non, massa. Aliquam lorem. In hac habitasse platea dictumst. Cras eu mauris. Quisque lacus. Donec ipsum. Nullam vitae sem at nunc pharetra ultricies. Vivamus elit eros, ullamcorper a, adipiscing sit amet, porttitor ut, nibh. Maecenas adipiscing mollis massa. Nunc ut dui eget nulla venenatis aliquet. Sed luctus posuere justo. Cras vehicula varius turpis. Vivamus eros metus, tristique sit amet, molestie dignissim, malesuada et, urna.
+In the third chapter we turn our attention to \emph{MapReduce}, a popular model
+of distributed computation which has novel constraints on communication and
+space. We first refine an existing theoretical model of MapReduce. Then we
+prove a general result on the ability of a two-round MapReduce protocol to
+capture all of sublogarithmic space Turing machines. Finally, we prove a
+connection between MapReduce, the exponential time hypothesis, and
+long-standing open conjectures about complexity hierarchies within simultaneous
+time/space-bounded copmlexity classes (TISP). A simplification of this result
+is that the exponential time hypothesis implies a hierarchy within linear-space
+TISP, which in turn implies a hierarchy within MapReduce for each of the
+parameters of interest.
 
-Cras dictum. Maecenas ut turpis. In vitae erat ac orci dignissim eleifend. Nunc quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed pulvinar, felis id consectetuer malesuada, enim nisl mattis elit, a facilisis tortor nibh quis leo. Sed augue lacus, pretium vitae, molestie eget, rhoncus quis, elit. Donec in augue. Fusce orci wisi, ornare id, mollis vel, lacinia vel, massa.
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
-
-Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.
+The reader is assumed to be familiar with the basic concepts of computational
+complexity---Turing machines, the classes P, NP, TIME, SPACE, the concept of a
+complexity hierarchy, basic reductions, etc.---as well as basic concepts in
+graph theory and game theory. 
