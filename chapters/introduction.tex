@@ -91,16 +91,14 @@ the art.~\cite{Gutfraind14}
 \section{Basic Definitions}
 
 An \emph{undirected graph} $G = (V,E)$ consists of a set of vertices $V$ and a
-set of edges $E \subset V \coprod V$, where $\coprod$ denotes the disjoint
-union of sets. A \emph{directed} graph gives orientation to the edges, i.e. the
-edge set $E$ are instead ordered pairs in $V \times V$. Sometimes we will abuse
-notation and denote an undirected edge as an ordered pair $(u,v)$. The
-\emph{degree} of a vertex is $\textup{deg}_G(v) = |\{e \in E : v \in e \}|$.
-Sometimes when there are multiple graphs we will specify by denoting $V = V(G),
-E = E(G)$. A \emph{path} is an alternating list $(v_1, e_1, v_2, e_2, \dots,
-e_{k-1}, v_k)$ where $\forall i, e_i = (v_i,v_{i+1})$. An undirected graph is
-\emph{connected} if every pair of nodes $v,w \in V$ has a path connecting $v$
-to $w$.
+set of unordered pairs called edges $E \subset V \times V$. A \emph{directed}
+graph gives orientation to the edges, i.e. the edge set $E$ are instead ordered
+pairs in $V \times V$. The \emph{degree} of a vertex is $\textup{deg}_G(v) =
+|\{e \in E : v \in e \}|$.  Sometimes when there are multiple graphs we will
+specify by denoting $V = V(G), E = E(G)$. A \emph{path} is an alternating list
+$(v_1, e_1, v_2, e_2, \dots, e_{k-1}, v_k)$ where $\forall i, e_i =
+(v_i,v_{i+1})$. An undirected graph is \emph{connected} if every pair of nodes
+$v,w \in V$ has a path connecting $v$ to $w$.
 
 A graph $G = (V,E)$ is called $k$-colorable if there is an assignment $f:V \to \{
 1, 2, \dots, k \}$ such that for every edge $e = (u,v)$, $f(u) \neq f(v)$. I.e.
