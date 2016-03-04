@@ -1,46 +1,423 @@
 \chapter{Introduction}
 \label{introduction}
 
-This dissertation contains selected work of the author over the course of
-his graduate studies, focusing on the study of computational complexity in new
-models. The models studied concern graphs, networks, and the relation between
-the global and distributed computation computation of some quantity.
+Graphs and networks are among the most basic mathematical objects known, yet
+many questions about graphs are open. In particular, many notions that are well
+understood in simple domains become much more nuanced and complicated when
+generalized to networks. This added complexity comes from the interplay between
+the structure of the graph and the mathematical complexities of the problem. As
+an example from game theory, two-player games are well understood, but
+$n$-player games played on a network are often much more complicated. Indeed,
+we provide concrete evidence of this in Chapter~\ref{ch:anticoordination}. 
 
-In the first chapter we discuss \emph{anti-coordination} games played on
-graphs. These are games in which players (nodes) are connected by edges, and
-the players are incentivized to choose strategies that differ from their
-neighbors. We study the price of anarchy, which measures the tradeoff between
-players acting independently and greedily versus a central planning authority.
-We introduce a directed graph generalization which allows one to model both
-anti-coordination and coordination incentives. We further prove that the
-complexity of computing strategies with certain properties (akin to being a
+Networks are also becoming an increasingly important part of how computer
+science is applied more generally. As a short list, the algorithmic study of
+networks is applied to the internet, online social networks, routing networks,
+computing networks, power grids, biological networks, and many others.
+Moreover, real world networks scale to millions or billions of vertices. This
+gives rise to three needs in the study of networks:
+
+\begin{enumerate}
+\item Understanding the asymptotic complexity of algorithms on networks, and
+moreover understanding how the specific properties of networks in a problem
+domain differ from general networks. We explore this in
+Chapter~\ref{ch:resilience}.
+\item Understanding the capability of distributed computing models to solve
+problems on massive networks. We explore this theme in
+Chapter~\ref{ch:mapreduce}.  
+\item When problems are known to be intractable, understanding the potential
+for one to find an approximate solution. We study this for a specific problem
+in Chapter~\ref{ch:nanip}.
+\end{enumerate}
+
+Many of these needs interleave with the goal of understanding what makes a
+graph problem computationally intractable, and of finely delineating the
+boundary between tractable and intractable regimes. That theme unites this
+dissertation.  We now give a short summary of the contributions presented in
+this dissertation, followed by background information for each chapter.
+
+In the Chapter~\ref{ch:anticoordination} we discuss \emph{anti-coordination}
+games played on graphs. These are games in which players (nodes in a graph) are
+incentivized to choose strategies that differ from their neighbors. We
+characterize the price of anarchy for these games, which measures the tradeoff
+between players acting independently and greedily versus a central planning
+authority. We introduce a directed graph generalization which allows one to
+model both anti-coordination and coordination incentives. We further prove that
+the complexity of computing strategies with certain properties (akin to being a
 certain kind of Nash equilibrium) is NP-hard.
 
-In the second chapter we introduce a new model for measuring the complexity of
-a combinatorial decision problem called \emph{resilience}. Loosely speaking, an
-instance of a problem is resilient if it is satisfiable and remains satisfiable
-under small adversarial manipulations. For graph coloring, this corresponds to
-a graph which is, say, 3-colorable and remains so even after an adversary adds
-an arbitrary edge to the graph. In general, we ask how resilient a problem must
-be in order to make finding solutions tractable. Surprisingly, for the previous
-example of graph 3-coloring, it remains NP-hard to find a 3-coloring. We
-further study the gradient between hardness and tractability for resilient
-coloring. We also completely characterize the complexity of resilient boolean
+In Chapter~\ref{ch:resilience} we introduce a new model for measuring the
+complexity of a combinatorial decision problem called \emph{resilience}.
+Loosely speaking, an instance of a problem is resilient if it is satisfiable
+and remains satisfiable under small adversarial manipulations. For graph
+coloring, this corresponds to a graph which is, say, 3-colorable and remains so
+even after an adversary adds an arbitrary edge to the graph. In general, we ask
+how resilient a problem must be in order to make finding solutions tractable.
+Surprisingly, for the example of graph 3-coloring with the ability to add a
+single arbitrary edge, it remains NP-hard to find a 3-coloring. We further
+study the gradient between hardness and tractability for resilient coloring. We
+also completely characterize the complexity of resilient boolean
 satisfiability: it is either vacuous or NP-hard.
 
-In the third chapter we turn our attention to \emph{MapReduce}, a popular model
-of distributed computation which has novel constraints on communication and
-space. We first refine an existing theoretical model of MapReduce. Then we
-prove a general result on the ability of a two-round MapReduce protocol to
-capture all of sublogarithmic space Turing machines. Finally, we prove a
-connection between MapReduce, the exponential time hypothesis, and
-long-standing open conjectures about complexity hierarchies within simultaneous
-time/space-bounded copmlexity classes (TISP). A simplification of this result
-is that the exponential time hypothesis implies a hierarchy within linear-space
-TISP, which in turn implies a hierarchy within MapReduce for each of the
-parameters of interest.
+In Chapter~\ref{ch:mapreduce} we turn our attention to \emph{MapReduce}, a
+popular model of distributed computation which has novel constraints on
+communication and space. We first refine an existing theoretical model of
+MapReduce. Then we prove a general result on the ability of a two-round
+MapReduce protocol to capture all of sublogarithmic space Turing machines.
+Finally, we prove a connection between MapReduce, the exponential time
+hypothesis, and long-standing open conjectures about complexity hierarchies
+within simultaneous time/space-bounded complexity classes (TISP). A
+simplification of this result is that the exponential time hypothesis implies a
+hierarchy within linear-space TISP, which in turn implies a hierarchy within
+MapReduce for each of the parameters of interest.
 
-The reader is assumed to be familiar with the basic concepts of computational
-complexity---Turing machines, the classes P, NP, TIME, SPACE, the concept of a
-complexity hierarchy, basic reductions, etc.---as well as basic concepts in
-graph theory and game theory. 
+In Chapter~\ref{ch:nanip}, we study a model of disaster recovery in a network
+called the Neighbor Aided Network Installation Problem (NANIP). This problem
+asks one to determine the optimal ordering of nodes in a graph, not necessarily
+as a path, which minimizes the cost of traversing the nodes in that order. The
+cost of traversing a node is a function of the number of neighbors that have
+already been visited. The chapter presents three contributions. First, we prove
+that NANIP is NP-hard even under convex cost functions, has no FPTAS, and more
+generally cannot be approximated to within a factor of $(1-n^{-c})$ for all
+$c>0$. Second, we disprove a conjecture of~\cite{Gutfraind14} on the optimality
+of the greedy algorithm for ``connected'' solutions of NANIP, instead showing
+that no connected algorithm can approximate NANIP to within a logarithmic
+multiplicative factor. The greedy algorithm specifically has a linear
+approximation lower bound. Third, we develop a new integer programming
+formulation of NANIP by adapting the technique of Miller, Tucker, and
+Zemlin~\cite{miller1960integer}, and measure the improvement over the state of
+the art.~\cite{Gutfraind14}
+ 
+\section{Basic Definitions}
+
+An \emph{undirected graph} $G = (V,E)$ consists of a set of vertices $V$ and a
+set of edges $E \subset V \coprod V$, where $\coprod$ denotes the disjoint
+union of sets. A \emph{directed} graph gives orientation to the edges, i.e. the
+edge set $E$ are instead ordered pairs in $V \times V$. Sometimes we will abuse
+notation and denote an undirected edge as an ordered pair $(u,v)$. The
+\emph{degree} of a vertex is $\textup{deg}_G(v) = |\{e \in E : v \in e \}|$.
+Sometimes when there are multiple graphs we will specify by denoting $V = V(G),
+E = E(G)$. A \emph{path} is an alternating list $(v_1, e_1, v_2, e_2, \dots,
+e_{k-1}, v_k)$ where $\forall i, e_i = (v_i,v_{i+1})$. An undirected graph is
+\emph{connected} if every pair of nodes $v,w \in V$ has a path connecting $v$
+to $w$.
+
+A graph $G = (V,E)$ is called $k$-colorable if there is an assignment $f:V \to \{
+1, 2, \dots, k \}$ such that for every edge $e = (u,v)$, $f(u) \neq f(v)$. I.e.
+if $\{1,\dots, k\}$ are thought of as colors, then no edge is monochromatic.
+The \emph{chromatic number} of a graph, $\chi(G)$, is the smallest integer $k$
+for which $G$ is $k$-colorable. The \emph{complete} graph $K_n$ is the
+$n$-vertex graph which has edges between every pair of vertices. The CLIQUE
+problem is the problem of determining, given an undirected graph $G$ and an
+integer $m$ as input, whether $G$ contains a subgraph isomorphic to $K_m$.
+
+The problem of \emph{boolean satisfiability} is the decision problem asking for
+a given propositional formula $\varphi$, whether some assignment of its
+variables makes $\varphi$ true. If there is such an assignment, the formula is
+said to be \emph{satisfiable}. A formula $\varphi$ is said to be in
+\emph{conjunctive normal form} with clauses of size $k$, or $k$-CNF form, if it
+can be written as $\varphi = C_1 \wedge \dots \wedge C_m$, where each $C_i$ is
+a disjunction of three literals. Boolean satisfiability for $k$-CNF formulas is
+called $k$-satisfiability, or $k$-SAT. 
+
+As 3-SAT is a classical NP-hard problem~\cite{GareyJ79}, we use it to prove the
+hardness of many problems (provided P $\neq$ NP) via so-called \emph{gadget
+reductions}. A \emph{polynomial-time} reduction from problem (language) $A$ to
+problem (language) $B$ is a polynomial-time computable function $f : \{0,1\}^*
+\to \{0,1\}^*$ such that $x \in A$ if and only if $f(x) \in B$. That is, $x$
+has a ``yes'' answer if and only if $f(x)$ has a ``yes'' answer. A gadget
+reduction is a type of reduction that is \emph{local} in the sense that each
+bit of the output $f(x)$ can only depend on a bounded number of bits of the
+input $x$ (rigorously, $f$ is computable by constant-depth NC circuits). Less
+formally, a gadget reduction from 3-SAT to a graph problem requires one to, for
+each formula $\varphi$, construct a graph $G$ via a collection of subgraphs
+and pick an interpretation of truth/falsity such that 
+
+\begin{enumerate}
+\item Some of the subgraphs correspond to literals of $\varphi$ (literal
+gadget).
+\item Some of the subgraphs ensure that negated literals from $\varphi$ have
+negated interpretations in $G$ (negation gadget).
+\item Some of the subgraphs correspond to clauses (clause gadget).
+\item The interpretation for a clause gadget to be true is satisfied if and
+only if the interpretation for the truth of one of the member literal gadgets
+is satisfied.
+\end{enumerate}
+
+We do this in both Chapters~\ref{ch:anticoordination} and~\ref{ch:resilience},
+and design a new type of literal gadget for reducing SAT problems to coloring
+problems, where a literal is represented by a pair of vertices and is
+considered ``true'' if the two vertices have the same color.
+
+\section{Algorithmic Game Theory}
+
+Game theory generally studies strategies for competitive scenarios (games), and
+the properties of various kinds of equilibria. In particular, a game theorist
+typically studies game-theoretic models for real life scenarios, as well as the
+existence and uniqueness of a strategy that is `optimal' or `stable' in some
+sense.
+
+A classical theorem from game theory called \emph{fictitious
+play}~\cite{Robinson51} gives an algorithmic method to find an equilibrium
+strategy in a variety of settings~\cite{MondererS96,Berger05,Nachbar90}.
+However, this algorithm is only guaranteed to converge, and may take
+exponentially long to do so~\cite{DaskalakisGP09}. Algorithmic game theory
+distinguishes itself in part from classical game theory in that it places a
+major emphasis on the computational complexity of finding optimal equilibrium
+strategies. Significant progress in this area has been in the definition of the
+PPAD complexity class~\cite{Papadimitriou94}, which both encapsulates the
+complexity of computing Nash equilibria in two-player games and connects this
+to complexity questions in classical mathematical settings, such as computing
+Brouwer fixed points~\cite{ChenD09}. The results in
+Chapter~\ref{ch:anticoordination} are related to the flip-side of this
+question, when equilibria may not exist. For most of the cases we consider, the
+complexity of deciding whether there is an equilibrium is NP-hard.
+
+For our anti-coordination game, it turns out that finding \emph{strict}
+equilibria (where a player will necessarily perform worse by deviating) is
+NP-hard, as well as finding any equilibrium in a directed graph. Our
+NP-hardness results are gadget reductions from boolean 3-satisfiability
+(3-SAT), the problem of determining whether a propositional formula in
+conjunctive normal form (with clauses of size 3) has a satisfying assignment. A
+useful tool we use in these results is to represent each literal by a pair of
+vertices, calling the literal ``true'' if the two agents represented by that
+literal choose the same strategy. This technique is also used in
+Chapter~\ref{ch:resilience} to reduce from ``resilient'' satisfiability to
+resilient 3-coloring. 
+
+Another important angle is the measure of efficiency of equilibria in games
+with many players. The central concern is that an equilibrium that players
+naturally reach may result in a much lower social welfare than a
+non-equilibrium strategy, such as in a prisoner's dilemma. Here \emph{social
+welfare} is defined as the sum of the payoffs for all players, which is only
+interesting for games which are not zero-sum. The quantity that measures
+efficiency is called the \emph{price of anarchy}~\cite{KP99}, and it measures
+the ratio between the social welfare of the best equilibrium and the maximal
+social welfare under any strategy. We compute the price of anarchy for our
+anti-coordination game, which approaches 1 as the number of players grows. Our
+computation and setting was later generalized in\cite{FeldmanF15}.
+
+Finally, the method of a potential function is an important technique that we
+use to prove the existence of an equilibrium (and implicitly an algorithm for
+computing one) in the simplest setting studied in
+Chapter~\ref{ch:anticoordination}. The idea here is to construct valuation
+$\varphi$ on the strategy profile of the players that satisfies two properties.
+First, when players modify their strategies over time (imagining that they are
+playing a repeated game) the value of $\varphi$ provably increases, in our case
+monotonically. Second, a local maximum of $\varphi$ corresponds to the desired
+type of equilibrium. Games which lend themselves to such analyses are called
+\emph{potential games}, and these have been extensively studied in the game
+theory literature. See, e.g.,~\cite{MondererS96} for a generic classification
+theorem.
+
+\section{Graph Coloring and Resilience}
+
+One of the first important things one learns when studying graph theory is that
+graph coloring is hard. Recall that coloring a graph with $k$ colors assigning
+each vertex a color (a number in $\{ 1, 2, \dots, k \}$ so that no edge is
+monochromatic. Deciding whether a graph can be colored with $k$ colors for any
+$k \geq 3$ (not to mention finding such a coloring) has no known polynomial
+time algorithm and is a classical NP-hard problem~\cite{GareyJ79}.  
+
+One might naturally think graph coloring has a gradient of difficulty. Perhaps,
+as graphs get more ``complex'' it becomes algorithmically harder to figure out
+how colorable they are. There are many well-known notions of simplicity for
+graphs, but they rarely fall on a gradient. For example, here are some ways to
+make graph coloring easy:
+
+\begin{itemize}
+\item Restrict to planar graphs. Then deciding 4-colorability is easy because
+the answer is always yes.~\cite{AppelH77I,AppelH77II}
+
+\item Restrict to triangle-free planar graphs. Then finding a 3-coloring is
+in P. (There are many algorithms, see e.g.~\cite{DvovrakKT11}.)
+
+\item Restrict to perfect graphs (which again requires knowledge about how
+colorable it is).\cite{GrotschelLS12,HMM10}
+
+\item Restrict to graphs of tree-width or clique-width bounded by a
+constant.~\cite{Cai03}
+
+\item Restrict to graphs that are characterized by omitting a certain kind of
+induced subgraph (such as having no induced paths of length 4 or
+5).~\cite{KKTW01}
+\end{itemize}
+
+It should be emphasized that these results are very difficult to compare.  The
+properties are inherently binary (either perfect or imperfect, planar or not
+planar). Coloring general graphs is much bleaker, where the focus has turned to
+approximations. A typical goal for an approximation algorithm would be to find
+an algorithm that can color a graph $G$ which has true chromatic number
+$\chi(G)$ using at most $2\chi(G)$ colors. Garey and Johnson proved this
+problem is hard~\cite{GareyJ79}.  This approximation lower bound was improved
+by Hastad and Zuckerman to $n^{1-\varepsilon}$ for any $\varepsilon >
+0$.~\cite{Ha99,Zu07}
+
+The next avenue is to assume the chromatic number of the input graph is known.
+For example: given the promise that a graph G is 3-colorable, can one
+efficiently find a coloring with 8 colors? The best would be to find a coloring
+with 4 colors, but this is already known to be NP-hard.~\cite{GuKh2000} The
+best known algorithms to find approximate colorings of 3-colorable graphs
+regrettably depend on the size of the graph. The best algorithm to date colors
+3-colorable graphs with $n^{0.2-\delta}$ colors.~\cite{KawarabayashiT14} 
+
+The lower bounds are a bit more hopeful. It is known to be NP-hard to color a
+$k$-colorable graph using $2^{\sqrt[3]{k}}$ colors if $k$ is sufficiently
+large~\cite{Huang13}.  There are a handful of other linear lower bounds that
+work for all $k \geq 3$, but to the best of our knowledge this is the best
+asymptotic result. The big open problem is to find an upper bound depending
+only on $k$. Even $k^{k^k}$ colors would be considered progress.
+
+Our topic of study in Chapter~\ref{ch:resilience} refines the approximate
+coloring question in the following sense. We introduce a parameter $r \in
+\mathbb{N}$, and we make the assumption that the input graph is $k$-colorable,
+and \emph{remains} $k$-colorable under the adversarial addition of $r$ new
+edges. We call such graphs $r$-resiliently $k$-colorable. 
+
+The idea is that highly resilient instances are easy to color, and the learning
+about the resilience boundary could provide a useful perspective on the general
+approximate 3-coloring question. Moreover, since the boundary is itself an
+NP-hardness boundary, completely characterizing the complexity of resilient
+$k$-coloring gives a finer perspective on P vs. NP.
+
+Following this thread, in addition to coloring, the main argument is that
+resilience is a natural parameter for any combinatorial search problem. One can
+formulate a resilient version of Hamiltonian path or 3D-matching or unique
+games. Indeed, in Chapter~\ref{ch:resilience} we completely characterize the
+complexity of resilient boolean satisfiability, whereby resilience means a
+formula can be satisfied even under the operation of fixing variables to truth
+values. In that case resilience does not introduce a difficulty gradient, and
+$r$-resilient $k$-SAT is either NP-hard or vacuously empty. However, we
+demonstrate that one can create resilience-preserving reductions between NP
+problems, specifically reducing resilient 1-resilient 6-SAT to 1-resilient
+3-coloring, which shows the latter is also NP-hard. The reduction works by
+constructing a graph in such a way so that an edge added to this new graph
+corresponds to a weaker constraint on the underlying SAT formula than fixing
+the truth value of a variable. This suggests that there is a fruitful theory of
+resilience-preserving reductions, and it extends existing tools for
+constructing NP-hardness reductions to the study of resilience.
+
+\section{MapReduce and Distributed Complexity}
+
+In Chapter~\ref{ch:mapreduce} we turn to a model of computing based on the
+paradigm of MapReduce~\cite{DeanG08}. This model distributes computation
+across a number of processors and rounds in such a way that no processor has
+random access to the entire input in any round. 
+
+A central open problem related to MapReduce is whether one can determine if an
+undirected graph is connected in a constant number of rounds. It can be done on
+MapReduce in $O(\log n)$ rounds~\cite{Karloff10}, but in MapReduce rounds are
+the primary complexity measure, leading one to the present problem.  More
+generally, many problems on sparse graphs have unresolved complexity for the
+same reason.
+
+The conjecture is that graph connectivity cannot be done in constant rounds.
+However, there are simply no tools available for proving a lower bound on the
+complexity of a MapReduce problem. In the hopes of progress toward a lower
+bound, one would naturally ask whether tools from classical complexity theory
+could be brought to bear. As it turns out, our work is the first to give
+substantial connections between MapReduce (and other modern distributed
+computing models) and classical complexity classes for Turing machines. This
+was due in part to informal model definitions in the literature, which we
+refine, and the alternative focus on upper bounds and algorithm design in the
+general community.
+ 
+The consequences of our work have interesting practical implications and the
+potential for deep connections to other parts of classical complexity. That is,
+this work does not just use complexity theory to understand MapReduce, it
+provides connections that go both ways, and answering questions about MapReduce
+could shed light on conjectures about tradeoffs between time and space
+complexity. In the rest of this section we will describe the techniques used in
+Chapter~\ref{ch:mapreduce} and the basic complexity classes involved. All of
+the results we describe in the remainder of this section are common knowledge,
+and we refer the reader to the standard text of~\cite{AroraB09}.
+
+First, recall that $\TIME(f(n))$ is the class of decision problems solvable on
+a Turing machine using $O(f(n))$ steps, and $\SPACE(g(n))$ is the class of
+problems solvable on a Turing machine using $O(g(n))$ tape cells. The class
+$\TISP(f(n), g(n))$ is the class of problems solvable on a Turing machine in
+simultaneous time $f(n)$ \emph{and} space $g(n)$. Note that it is widely
+believed that $\TIME(f(n)) \cap \SPACE(g(n)) \neq TISP(f(n), g(n))$. Very few
+facts are known about $\TISP$. Further recall that $\NTIME(f(n))$ is the set of
+problems solvable on a nondeterministic Turing machine in $O(f(n))$ steps, and
+that $\P = \cup_i \TIME(n^i)$, $\NP = \cup_i \NTIME(n^i)$, $\EXP = \cup_i
+\TIME(2^{n^i})$, $\NEXP = \cup_i \NTIME(2^{n^i})$. 
+
+One central idea studied in complexity theory is the notion of a
+\emph{hierarchy}. The presence of a hierarchy in a complexity class means that
+algorithms that are allowed more resources can solve more problems. For
+example, the widely known deterministic time-hierarchy theorem states that for
+any function $f(n)$ and any function $g(n)$ which grows sufficiently faster
+than $f(n)$ (specifically, $f(n) \log f(n) = o(g(n))$), Turing machines that
+are allowed $g(n)$ time can solve problems that cannot be solved with $f(n)$
+time. In other words, $\TIME(f(n)) \subsetneq \TIME(g(n))$. In general, a
+hierarchy theorem is a claim about an increasing family of complexity classes
+$C$ parameterized by some resource $f(n)$, which has the form ``For all
+functions $g(n)$ sufficiently larger than $f(n)$, $C(f(n)) \subsetneq
+C(g(n))$.'' 
+
+While many hierarchy theorems are known, even the standard complexity classes
+still have open questions related to hierarchies. For example, while there is a
+known hierarchy theorem for $\TIME$, there is no known hierarchy for $\TISP(-,
+g(n))$, that is, a time hierarchy theorem within a fixed space bound. Our work
+gives a new connection between this question and existing complexity hypothesis
+such as the Exponential Time Hypothesis~\cite{ImpagliazzoPZ01}, which states
+that there exist problems (such as boolean satisfiability) that have no
+subexponential-time algorithms.  Further, a hierarchy within linear-space TISP
+implies a (slightly wider) hierarchy within MapReduce. We connect these
+hypotheses to give a conditional hierarchy. 
+
+\emph{Padding} is a central technique we use to prove our hierarchy theorems.
+Padding allows one to use the assumption that two large complexity classes are
+not equal to prove that two smaller complexity classes are not equal. As an
+illustrative example, we prove that if $\EXP \neq \NEXP$, then $\P \neq
+\NP$.  Suppose that $\P = \NP$ and let $L$ be a language in $\NEXP$ decided by
+a nondeterministic Turing machine $M$ in time $2^{n^k}$. For each string $x \in
+L$, form $L' = \{ x1^{2^{|x|^k}} : x \in L \}$, i.e., pad $x$ with an
+exponential number of 1's at the end. Then an $\NP$ machine can simulate $M$ by
+ignoring the padded part of the input. This takes exponential time, but that
+runtime is polynomial in the size of the padded input $x1^{2^{|x|^k}}$. Since
+$\P = \NP$, there is a deterministic Turing machine $M'$ that solves $L'$, and
+$M'$ can be simulated by an $\EXP$ machine after adding padding, which takes
+exponential time. So $\P = \NP \to \EXP = \NEXP$. We use padding to establish
+our hierarchy theorems in Chapter~\ref{ch:mapreduce}.
+
+\section{Neighbor Aid and Disaster Recovery}
+
+In the study of infrastructure networks, a great deal of importance is placed
+on the task of disaster recovery. For example, if a hurricane damages the power
+grid in a region, recovery workers must decide how best to restore the network
+by repairing each site. Moreover, the cost of repairing a site is cheaper if
+nearby sites have already been recovered because previously recovered nodes
+provide resources to the recovery effort. This phenomenon is called
+\emph{neighbor aid} by~\cite{Gutfraind14}. 
+
+More abstractly, one can fix a network $G$ and a function $f: \mathbb{N}
+\to \mathbb{N}$ representing the cost of recovering a node $v$ of $G$, where the
+input is the number of neighbors of $v$ that have already been recovered. Then
+the goal is to determine the optimal ordering of the nodes to repair. This
+problem, introduced by~\cite{Gutfraind14}, is called the Neighbor Aided Network
+Installation Problem (NANIP).
+
+Another angle is resource deployment. One can imagine a military deployment in
+which a general wishes to conquer all of the cities in a network, and it is
+much easier to invade a new city if many neighboring cities already house
+allied tanks. Moreover, this highlights that a traversal of the network need
+not be ``connected'' in any way; an optimal strategy may be to conquer two
+cities on opposite sides of the network and proceed on two fronts. Indeed, we
+validate this intuition in Chapter~\ref{ch:nanip} with a counterexample to a
+conjecture of~\cite{Gutfraind14} and a logarithmic approximation-lower bound
+for any ``connected'' traversal (we make this notion rigorous in
+Section~\ref{sec:greedynanip}). 
+
+We further refine the computational complexity of the NANIP problem, showing
+that NANIP is NP-hard even if the cost function $f$ is convex decreasing, and
+the hardness reduction extends to a hardness of approximation lower bound.
+
+\section{Note}
+
+The works presented in this dissertation were published at conferences and
+journals during the course of the author's graduate studies. Specifically, the
+work in Chapter~\ref{ch:anticoordination} was published as~\cite{KunPR13},
+Chapter~\ref{ch:resilience} as~\cite{KunR14}, Chapter~\ref{ch:mapreduce}
+as~\cite{FishKLRT15}, and Chapter~\ref{ch:nanip} as~\cite{GutfraindKLR15}.

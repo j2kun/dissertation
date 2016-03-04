@@ -1,16 +1,5 @@
-
 \chapter{Computational Complexity and MapReduce}
-
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\mrc}{\textup{MRC}}
-\newcommand{\bsp}{\textup{BSP}}
-\newcommand{\SPACE}{\textup{SPACE}}
-\newcommand{\TIME}{\textup{TIME}}
-\newcommand{\TISP}{\textup{TISP}}
-\renewcommand{\P}{\textup{P}}
-\renewcommand{\L}{\textup{SPACE}(\log(n))}
-\newcommand{\NP}{\textup{NP}}
-\newcommand{\PSPACE}{\textup{PSPACE}}
+\label{ch:mapreduce}
 
 In this chapter we study the MapReduce~\cite{DeanG08} complexity class (MRC)
 defined by Karloff~et~al.~\cite{Karloff10}, which is a formal
@@ -341,11 +330,11 @@ So in particular $\mrc^0=\bigcup_{k\in\N}\text{MRC}[1,n^k]$.
 A complexity class is informally called uniform if the descriptions of the
 machines solving problems in it do not depend on the length of an input
 instance. Classical complexity classes defined by Turing machines with resource
-bounds, such as $\P$, $\NP$, and $\L$, are uniform. On the other hand, circuit
+bounds, such as $\P$, $\NP$, and $\Logspace$, are uniform. On the other hand, circuit
 complexity classes are naturally nonuniform; a fixed Boolean circuit can only
 accept inputs of a single length. There is ambiguity about the uniformity of
 MRC as defined in~\cite{Karloff10}. Since we wish to relate the MRC model to
-classical complexity classes such as $\P$ and $\L$, making sure that the model
+classical complexity classes such as $\P$ and $\Logspace$, making sure that the model
 is uniform is crucial. Indeed, innocuous-seeming changes to the definitions
 above introduce nonuniformity (and in particular this is true of the original
 MRC definition in~\cite{Karloff10}). In Section~\ref{sec:nonuniformmrc} we show
@@ -749,11 +738,11 @@ $\mrc[n^\mu,1]\subseteq\mrc[n^\mu,n^\beta]$.  So $\mrc[n^\alpha,n^\beta]\neq
 
 \begin{corollary} \label{cor:lvsp}
 If $\mrc[\textup{poly}(n), 1] \subsetneq \mrc[\textup{poly}(n),
-\textup{poly}(n)]$, then it follows that $\L \neq \P$.
+\textup{poly}(n)]$, then it follows that $\Logspace \neq \P$.
 \end{corollary}
 
 \begin{proof}
-\begin{align*}	\L &\subseteq \TISP(\textup{poly}(n), \log n) \subseteq
+\begin{align*}	\Logspace &\subseteq \TISP(\textup{poly}(n), \log n) \subseteq
 \TISP(\textup{poly}(n), n) \subseteq \mrc[\textup{poly}(n), 1] \\ &\subseteq
 \mrc[\textup{poly}(n), \textup{poly}(n)] \subseteq \P.\end{align*}
 
@@ -762,10 +751,10 @@ Lemma~\ref{lem:tisprelation}, and the rest are trivial.
 \end{proof}
 
 Corollary~\ref{cor:lvsp} is interesting because if any of the containments in
-the proof are shown to be proper, then $\L \neq \P$. Moreover, if we provide
+the proof are shown to be proper, then $\Logspace \neq \P$. Moreover, if we provide
 MRC with a polynomial number of rounds, Corollary~\ref{cor:lvsp} says that
 determining whether time provides substantially more power is at least as hard
-as separating $\L$ from P. On the other hand, it does not rule out the possibility
+as separating $\Logspace$ from P. On the other hand, it does not rule out the possibility
 that $\mrc[\textup{poly}(n), \textup{poly}(n)] = \P$, or even that
 $\mrc[\textup{poly}(n), 1] = \P$.
 
@@ -786,7 +775,7 @@ time alone, e.g. $\mrc[n^\alpha, \text{poly}(n)] \subsetneq \mrc[n^\mu,
 
 We also ask whether $\mrc[\text{poly}(n), \text{poly}(n)] = \P$. In other
 words, if a problem has an efficient solution, does it have one with using data
-locality? A negative answer implies $\L\neq\P$ which is a major open problem in
+locality? A negative answer implies $\Logspace \neq\P$ which is a major open problem in
 complexity theory, and a positive answer would likely provide new and valuable
 algorithmic insights. Finally, while we have focused on the relationship
 between rounds and time, there are also implicit parameters for the amount of

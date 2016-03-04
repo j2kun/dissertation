@@ -42,6 +42,21 @@
 \newtheorem{observation}{Observation}
 \newtheorem{remark}{Remark}
 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\mrc}{\textup{MRC}}
+\newcommand{\bsp}{\textup{BSP}}
+\newcommand{\SPACE}{\textup{SPACE}}
+\newcommand{\TIME}{\textup{TIME}}
+\newcommand{\NTIME}{\textup{NTIME}}
+\newcommand{\TISP}{\textup{TISP}}
+\newcommand{\EXP}{\textup{EXP}}
+\newcommand{\NEXP}{\textup{NEXP}}
+\renewcommand{\P}{\textup{P}}
+\newcommand{\Logspace}{\textup{SPACE}(\log(n))}
+\newcommand{\NP}{\textup{NP}}
+\newcommand{\PSPACE}{\textup{PSPACE}}
+
+
 % Source code listings
 \RequirePackage{listings}
 \lstset{ %
@@ -91,20 +106,20 @@
 \RequirePackage{titling}
 
 % Front matter.
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \usepackage[titles]{tocloft}
 \usepackage[titletoc]{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
-\renewcommand\listfigurename{Listing of figures}
-\renewcommand\listtablename{Listing of tables}
+\renewcommand\listfigurename{List of figures}
+\renewcommand\listtablename{List of tables}
 
 % Endmatter
 \renewcommand{\setthesection}{\arabic{chapter}.A\arabic{section}}
 
 % References.
-\renewcommand\bibname{References}
-\RequirePackage[super,comma,numbers]{natbib}
+\renewcommand\bibname{Cited Literature}
+\RequirePackage[comma,numbers]{natbib}
 \renewcommand{\bibnumfmt}[1]{[#1]}
 \RequirePackage[palatino]{quotchap}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-0.5\baselineskip}}
@@ -178,12 +193,16 @@
 \renewcommand{\frontmatter}{
 	\input{frontmatter/personalize}
 	\maketitle
-	\copyrightpage
-	\abstractpage
-	\tableofcontents
-	% \listoffigures % optional
+	\pagenumbering{roman}
+	\setcounter{page}{1}
 	\dedicationpage
 	\acknowledgments
+	\tableofcontents
+	\listoffigures 
+	\listoftables
+	\abstractpage
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
 }
 
 \renewcommand{\maketitle}{
@@ -193,33 +212,31 @@
 	\begin{center}
 	\Huge \textcolor{SchoolColor}{\thetitle} \normalsize \\
 	\vspace{100pt}
-	\textsc{a dissertation presented \\ by\\
-	\theauthor\\ to\\ The Department of \@department\\
+	\textsc{\\ BY\\
+   \vspace{12pt} 
+	\theauthor\\ B.S., \@pdOneSchool, \@pdOneYear \\ 
+   \vspace{24pt}
+   submitted as partial fulfillment of the requirements \\ 
+   for the degree of \@degree  in \@field \\ 
+   to the graduate college of the \\ 
+	\@university, \@degreeyear \\ 
 	\vspace{12pt}
-	in partial fulfillment of the requirements\\
-	for the degree of\\ \@degree\\
-	in the subject of\\ \@field\\
-	\vspace{12pt}
-	\@university\\ \@universitycity, \@universitystate\\
-	\@degreemonth\ \@degreeyear}
-	\end{center} \vspace*{\fill}
-}
-
-\newcommand{\copyrightpage}{
-	\newpage
-	\thispagestyle{empty}
-	\vspace*{\fill}
-	\scshape \noindent \small \copyright \small 2014\hspace{3pt}-- \theauthor \\
-	\noindent all rights reserved.
-	\vspace*{\fill}
-	\newpage
-	\rm
+   \@universitycity, \@universitystate
+   }
+	\end{center}
+   \vspace{24pt}
+   Defense Committee:\\
+   \vspace{12pt}
+      Lev Reyzin, Chair and Advisor \\ 
+      Gy\"orgy Tur\'an \\ 
+      Dhruv Mubayi \\ 
+      Andrew Suk \\ 
+      Robert Sloan, Department of Computer Science
+   \vspace*{\fill}
 }
 
 \newcommand{\abstractpage}{
 	\newpage
-	\pagenumbering{roman}
-	\setcounter{page}{3}
 	\pagestyle{fancy}
 	\lhead{Thesis advisor: Professor \@advisor} \rhead{\@author}
 	\renewcommand{\headrulewidth}{0.0pt}
@@ -246,8 +263,6 @@
 	\noindent
 	\input{frontmatter/thanks}
 	\vspace*{\fill} \newpage
-	\setcounter{page}{1}
-	\pagenumbering{arabic}
 }
 
 

@@ -1,40 +1,54 @@
 \contentsline {chapter}{\numberline {0}Introduction}{1}{chapter.0}
-\contentsline {chapter}{\numberline {1}Anti-Coordination Games and Stable Graph Colorings}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction and background}{4}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Previous work}{5}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Results}{7}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Preliminaries and definitions}{8}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Stable Colorings}{8}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Mixed and pure strategies}{10}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Strict and non-strict stability}{10}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Stable colorings}{11}{section.1.3}
-\contentsline {section}{\numberline {1.4}Strictly Stable Colorings}{12}{section.1.4}
-\contentsline {section}{\numberline {1.5}Stable colorings in directed graphs}{16}{section.1.5}
-\contentsline {section}{\numberline {1.6}Discussion and open problems}{19}{section.1.6}
-\contentsline {chapter}{\numberline {2}Resilience and Resiliently Colorable Graphs}{20}{chapter.2}
-\contentsline {subsection}{\numberline {2.0.1}Related work on resilience}{22}{subsection.2.0.1}
-\contentsline {subsection}{\numberline {2.0.2}Previous work on coloring}{23}{subsection.2.0.2}
-\contentsline {section}{\numberline {2.1}Resilient SAT}{24}{section.2.1}
-\contentsline {section}{\numberline {2.2}Resilient graph coloring and preliminary bounds}{27}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Problem definition and remarks}{27}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Observations}{28}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Upper and lower bounds}{30}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}NP-hardness of 1-resilient 3-colorability}{31}{section.2.3}
-\contentsline {section}{\numberline {2.4}Discussion and open problems}{35}{section.2.4}
-\contentsline {chapter}{\numberline {3}Computational Complexity and MapReduce}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{38}{section.3.1}
-\contentsline {section}{\numberline {3.2}Background and Previous Work}{40}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}MapReduce}{40}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Complexity}{42}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Models}{43}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}MapReduce and MRC}{43}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Nonuniformity}{46}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Other Models of Parallel Computation}{47}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Nonuniform MRC}{47}{section.3.4}
-\contentsline {section}{\numberline {3.5}Uniform BSP}{48}{section.3.5}
-\contentsline {section}{\numberline {3.6}Space Complexity Classes in $\textup {MRC}^0$}{49}{section.3.6}
-\contentsline {section}{\numberline {3.7}Hierarchy Theorems}{53}{section.3.7}
-\contentsline {section}{\numberline {3.8}Discussion and Open Problems}{57}{section.3.8}
-\contentsline {chapter}{\numberline {4}Conclusion}{59}{chapter.4}
-\contentsline {chapter}{Appendix \numberline {A}Source code listings}{60}{Appendix.1.A}
-\contentsline {chapter}{References}{74}{chapter*.20}
+\contentsline {section}{\numberline {0.1}Basic Definitions}{4}{section.0.1}
+\contentsline {section}{\numberline {0.2}Algorithmic Game Theory}{6}{section.0.2}
+\contentsline {section}{\numberline {0.3}Graph Coloring and Resilience}{8}{section.0.3}
+\contentsline {section}{\numberline {0.4}MapReduce and Distributed Complexity}{11}{section.0.4}
+\contentsline {section}{\numberline {0.5}Neighbor Aid and Disaster Recovery}{14}{section.0.5}
+\contentsline {section}{\numberline {0.6}Note}{15}{section.0.6}
+\contentsline {chapter}{\numberline {1}Anti-Coordination Games and Stable Graph Colorings}{16}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction and background}{17}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Previous work}{19}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Results}{21}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Preliminaries and definitions}{22}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Stable Colorings}{22}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Mixed and pure strategies}{24}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Strict and non-strict stability}{24}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Stable colorings}{25}{section.1.3}
+\contentsline {section}{\numberline {1.4}Strictly Stable Colorings}{27}{section.1.4}
+\contentsline {section}{\numberline {1.5}Stable colorings in directed graphs}{31}{section.1.5}
+\contentsline {section}{\numberline {1.6}Discussion and open problems}{34}{section.1.6}
+\contentsline {chapter}{\numberline {2}Resilience and Resiliently Colorable Graphs}{35}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Related work on resilience}{37}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.2}Previous work on coloring}{38}{subsection.2.0.2}
+\contentsline {section}{\numberline {2.1}Resilient SAT}{40}{section.2.1}
+\contentsline {section}{\numberline {2.2}Resilient graph coloring and preliminary bounds}{43}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Problem definition and remarks}{43}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Observations}{44}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Upper and lower bounds}{46}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}NP-hardness of 1-resilient 3-colorability}{48}{section.2.3}
+\contentsline {section}{\numberline {2.4}Discussion and open problems}{52}{section.2.4}
+\contentsline {chapter}{\numberline {3}Computational Complexity and MapReduce}{54}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{55}{section.3.1}
+\contentsline {section}{\numberline {3.2}Background and Previous Work}{57}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}MapReduce}{57}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Complexity}{59}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Models}{61}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}MapReduce and MRC}{61}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Nonuniformity}{64}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Other Models of Parallel Computation}{65}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Nonuniform MRC}{66}{section.3.4}
+\contentsline {section}{\numberline {3.5}Uniform BSP}{67}{section.3.5}
+\contentsline {section}{\numberline {3.6}Space Complexity Classes in $\textup {MRC}^0$}{68}{section.3.6}
+\contentsline {section}{\numberline {3.7}Hierarchy Theorems}{72}{section.3.7}
+\contentsline {section}{\numberline {3.8}Discussion and Open Problems}{77}{section.3.8}
+\contentsline {chapter}{\numberline {4}Network Installation Under Convex Costs}{79}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{80}{section.4.1}
+\contentsline {section}{\numberline {4.2}Preliminaries}{82}{section.4.2}
+\contentsline {section}{\numberline {4.3}Convex decreasing NANIP is NP-hard}{85}{section.4.3}
+\contentsline {section}{\numberline {4.4}Greedy analysis for convex NANIP}{91}{section.4.4}
+\contentsline {section}{\numberline {4.5}Integer programming for NANIP}{93}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}A new integer program}{93}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Experimental results}{95}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Conclusion}{95}{section.4.6}
+\contentsline {chapter}{References}{107}{chapter*.25}
+\contentsline {chapter}{Appendix \numberline {A}Source code listings}{108}{Appendix.1.A}

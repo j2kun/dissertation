@@ -6,17 +6,17 @@
 \begin{document}
 
 % the front matter
-\input{frontmatter/personalize}
-\maketitle
-\copyrightpage
+\frontmatter
 
-\setstretch{1.2}
-\abstractpage
-\tableofcontents
-%\authorlist
-\listoffigures
-\dedicationpage
-\acknowledgments
+%\input{frontmatter/personalize}
+%\maketitle
+%
+%\setstretch{1.2}
+%\abstractpage
+%\tableofcontents
+%\listoffigures
+%\dedicationpage
+%\acknowledgments
 
 \doublespacing
 
@@ -26,12 +26,7 @@
 \include{chapters/chapter1}
 \include{chapters/chapter2}
 \include{chapters/chapter3}
-\include{chapters/conclusion}
-\begin{appendices}
-   \include{chapters/appendixA}
-   \include{sourcecode/resilience}
-   \include{sourcecode/gradient}
-\end{appendices}
+\include{chapters/chapter4}
 
 \setstretch{1.2}
 
@@ -39,6 +34,13 @@
 \clearpage
 \bibliography{references}
 \addcontentsline{toc}{chapter}{References}
-\bibliographystyle{apalike2}
+\bibliographystyle{plain}
+
+\doublespacing
+\begin{appendices}
+   \include{chapters/appendixA}
+   \include{sourcecode/resilience}
+   \include{sourcecode/gradient}
+\end{appendices}
 
 \end{document}

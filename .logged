@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  31 JAN 2016 13:28
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  28 FEB 2016 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,27 +800,27 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 . and font adjustment code:
 . 
 .................................................
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
 (Font)                  EU1/MinionPro(1)/m/n --> EU1/MinionPro(1)/bx/n on input
- line 67.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 67.
+ line 82.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/MinionPro(1)/m/it on input line 67
+(Font)                  OT1/cmr/m/it --> EU1/MinionPro(1)/m/it on input line 82
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/MinionPro(1)/m/it on input line 6
-7.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 67.
+(Font)                  OT1/cmr/bx/it --> EU1/MinionPro(1)/m/it on input line 8
+2.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(1)/bx/n on input line 67
+(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(1)/bx/n on input line 82
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(1)/bx/n on input line 67
+(Font)                  OT1/cmr/bx/n --> EU1/MinionPro(1)/bx/n on input line 82
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  EU1/MinionPro(1)/m/it --> EU1/MinionPro(1)/bx/it on inp
-ut line 67.
+ut line 82.
 \symOperators:m:n=\mathgroup11
 .................................................
 . fontspec info: "defining-font"
@@ -879,9 +879,9 @@ text;+smcp;"
 . 
 .................................................
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 70.
+(Font)              scaled to size 10.0pt on input line 85.
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 71.
+(Font)              scaled to size 12.0pt on input line 86.
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1227,11 +1227,11 @@ Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
 \@quotebox=\box52
 )
 \mybibindent=\skip134
-Package color Info: Redefining color chaptergrey on input line 168.
-Package hyperref Info: Option `colorlinks' set `true' on input line 176.
+Package color Info: Redefining color chaptergrey on input line 183.
+Package hyperref Info: Option `colorlinks' set `true' on input line 191.
 )
 (./dissertation.aux (./chapters/introduction.aux) (./chapters/chapter1.aux)
-(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/conclusion.aux)
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
 (./chapters/appendixA.aux) (./sourcecode/resilience.aux)
 (./sourcecode/gradient.aux))
 \openout1 = `dissertation.aux'.
@@ -1326,9 +1326,9 @@ Package caption Info: End \AtBeginDocument code.
 Package caption Info: We need package `ragged2e' on input line 6.
  (./frontmatter/personalize.tex)
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 10.
+(Font)              scaled to size 24.88pt on input line 9.
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 10.
+(Font)              scaled to size 12.0pt on input line 9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
@@ -1336,23 +1336,30 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 )
 [1
 
-]
-LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 11.
-LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 11.
+] (./frontmatter/dedication.tex)
+LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/sl' in size <12> not availab
+le
+(Font)              Font shape `EU1/MinionPro(2)/m/it' tried instead on input l
+ine 9.
+LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 9.
  [2]
-LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 14.
- (./frontmatter/abstract.tex) [3]
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 15.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(./dissertation.toc
+(./frontmatter/thanks.tex
+Overfull \hbox (4.87949pt too wide) in paragraph at lines 9--13
+\EU1/MinionPro(2)/m/n/12 I would like to thank my advisor Lev for his advice, s
+upport, and collaboration through- 
+ []
+
+) [3
+
+] (./dissertation.toc
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/bx/n' will be
-(Font)              scaled to size 10.95pt on input line 1.
+(Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1362,232 +1369,326 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [4
+
+]
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 35.
+(Font)              scaled to size 8.0pt on input line 41.
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 35.
+(Font)              scaled to size 6.0pt on input line 41.
 )
 \tf@toc=\write4
 \openout4 = `dissertation.toc'.
 
- [4
-
-] [5]
+ [5]
 (./dissertation.lof
-Overfull \hbox (12.28949pt too wide) in paragraph at lines 3--3
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The strictly stable 2-coloring on the l
-eft attains a social welfare of 40 while the non- 
+Overfull \hbox (5.70358pt too wide) in paragraph at lines 3--3
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 The strictly stable 2-coloring on the left
+ attains a social welfare of 40 while 
  []
 
 
-Overfull \hbox (0.7349pt too wide) in paragraph at lines 6--6
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The clause gadget for $\OT1/cmr/m/n/10.
-95 ([] \OMS/cmsy/m/n/10.95 _ [] _ []\OT1/cmr/m/n/10.95 )$\EU1/MinionPro(2)/m/n/
-10.95 . Each literal corresponds to a pair of vertices, and 
+Overfull \hbox (18.25555pt too wide) in paragraph at lines 3--3
+ \EU1/MinionPro(2)/m/n/12 the non-strictly stable coloring on the right attains
+ 42, the maximum for this 
  []
 
 
-Overfull \hbox (6.08083pt too wide) in paragraph at lines 7--7
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The first five figures show that a colo
-ring with a monochromatic literal gadget can 
+Overfull \hbox (25.8396pt too wide) in paragraph at lines 6--6
+ \EU1/MinionPro(2)/m/n/12 tices, and a literal being satisfied corresponds to b
+oth vertices having the same 
  []
 
 
-Overfull \hbox (0.67882pt too wide) in paragraph at lines 7--7
- \EU1/MinionPro(2)/m/n/10.95 be extended to a strict equilibrium. The sixth (bo
-ttom right) shows that no strict 
+Overfull \hbox (13.29959pt too wide) in paragraph at lines 7--7
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 The first five figures show that a colorin
+g with a monochromatic literal gad- 
  []
 
 
-Overfull \hbox (1.49274pt too wide) in paragraph at lines 8--8
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The literal persistence gadget (left) a
-nd literal negation gadget (right) connecting 
+Overfull \hbox (9.27559pt too wide) in paragraph at lines 7--7
+ \EU1/MinionPro(2)/m/n/12 get can be extended to a strict equilibrium. The sixt
+h (bottom right) shows 
  []
 
 
-Overfull \hbox (12.72513pt too wide) in paragraph at lines 8--8
- \EU1/MinionPro(2)/m/n/10.95 two clause gadgets $[][]$ and $[][]$. The vertices
- labeled $[]$ on the left are part of the clause 
+Overfull \hbox (1.2396pt too wide) in paragraph at lines 7--7
+ \EU1/MinionPro(2)/m/n/12 that no strict equilibrium can exist if all the liter
+als are not monochromatic.[][] []  
  []
 
 
-Overfull \hbox (8.5336pt too wide) in paragraph at lines 9--9
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The construction from balanced unfriend
-ly partition to directed stable 2-coloring. 
+Overfull \hbox (6.25557pt too wide) in paragraph at lines 8--8
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 The literal persistence gadget (left) and 
+literal negation gadget (right) con- 
  []
 
 
-Overfull \hbox (19.91798pt too wide) in paragraph at lines 9--9
- \EU1/MinionPro(2)/m/n/10.95 Here $[]$ and $[]$ “stabilize” the 3-cycle. A bold
- arrow denotes a complete incidence from 
+Overfull \hbox (3.81155pt too wide) in paragraph at lines 8--8
+ \EU1/MinionPro(2)/m/n/12 necting two clause gadgets $[][]$ and $[][]$. The ver
+tices labeled $[]$ on the left are 
  []
 
 
-Overfull \hbox (3.67911pt too wide) in paragraph at lines 10--10
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 Reducing $[]$ colors to two colors. A b
-old arrow indicates complete incidence from 
+Overfull \hbox (0.95955pt too wide) in paragraph at lines 8--8
+ \EU1/MinionPro(2)/m/n/12 part of the clause gadget for $[][]$, and the vertice
+s labeled $[]$ on the right are 
  []
 
 
-Overfull \hbox (11.55215pt too wide) in paragraph at lines 12--12
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 From left to right: the Petersen graph,
- 2-resiliently 3-colorable; the Dürer graph, 4- 
+Overfull \hbox (2.8356pt too wide) in paragraph at lines 9--9
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 The construction from balanced unfriendly 
+partition to directed stable 2- 
  []
 
 
-Overfull \hbox (10.1323pt too wide) in paragraph at lines 12--12
- \EU1/MinionPro(2)/m/n/10.95 resiliently 4-colorable; the Grötzsch graph, 4-res
-iliently 4-colorably; and the Chvá- 
+Overfull \hbox (10.48355pt too wide) in paragraph at lines 9--9
+ \EU1/MinionPro(2)/m/n/12 coloring. Here $[]$ and $[]$ “stabilize” the 3-cycle.
+ A bold arrow denotes a com- 
  []
 
 
-Overfull \hbox (24.30888pt too wide) in paragraph at lines 12--12
- \EU1/MinionPro(2)/m/n/10.95 tal graph, 3-resiliently 4-colorable. These are al
-l maximally resilient (no graph is more 
+Overfull \hbox (13.7396pt too wide) in paragraph at lines 10--10
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 Reducing $[]$ colors to two colors. A bold
+ arrow indicates complete incidence 
  []
 
 
-Overfull \hbox (1.71178pt too wide) in paragraph at lines 13--13
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The classification of the complexity of
- $[]$-coloring $[]$-resiliently $[]$-colorable graphs. 
+Overfull \hbox (2.79558pt too wide) in paragraph at lines 12--12
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 From left to right: the Petersen graph, 2-
+resiliently 3-colorable; the Dürer 
  []
 
 
-Overfull \hbox (9.05315pt too wide) in paragraph at lines 13--13
- \EU1/MinionPro(2)/m/n/10.95 Left: the explicit classification for small $[]\OM
-L/cmm/m/it/10.95 ; []$\EU1/MinionPro(2)/m/n/10.95 . Right: a zoomed-out view of
- the same 
+Overfull \hbox (20.0076pt too wide) in paragraph at lines 12--12
+ \EU1/MinionPro(2)/m/n/12 graph, 4-resiliently 4-colorable; the Grötzsch graph,
+ 4-resiliently 4-colorably; 
  []
 
 
-Overfull \hbox (13.09612pt too wide) in paragraph at lines 14--14
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 The gadget for a literal. The two singl
-e-degree vertices represent a single literal, and 
+Overfull \hbox (13.30756pt too wide) in paragraph at lines 12--12
+ \EU1/MinionPro(2)/m/n/12 and the Chvátal graph, 3-resiliently 4-colorable. The
+se are all maximally re- 
  []
 
 
-Overfull \hbox (13.82982pt too wide) in paragraph at lines 14--14
- \EU1/MinionPro(2)/m/n/10.95 are interpreted as true if they have the same colo
-r. The base vertex is always colored 
+Overfull \hbox (3.36356pt too wide) in paragraph at lines 12--12
+ \EU1/MinionPro(2)/m/n/12 silient (no graph is more resilient than stated) and 
+chromatic (no graph is 
  []
 
 
-Overfull \hbox (16.92134pt too wide) in paragraph at lines 15--15
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 Left: the gadget for a clause. Right: t
-he negation gadget ensuring two literals assume 
+Overfull \hbox (0.53159pt too wide) in paragraph at lines 13--13
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 The classification of the complexity of $[
+]$-coloring $[]$-resiliently $[]$-colorable 
+ []
+
+
+Overfull \hbox (2.15538pt too wide) in paragraph at lines 13--13
+ \EU1/MinionPro(2)/m/n/12 graphs. Left: the explicit classification for small $
+[]\OML/cmm/m/it/12 ; []$\EU1/MinionPro(2)/m/n/12 . Right: a zoomed-out 
+ []
+
+
+Overfull \hbox (13.58356pt too wide) in paragraph at lines 14--14
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 The gadget for a literal. The two single-d
+egree vertices represent a single lit- 
+ []
+
+
+Overfull \hbox (1.77559pt too wide) in paragraph at lines 14--14
+ \EU1/MinionPro(2)/m/n/12 eral, and are interpreted as true if they have the sa
+me color. The base ver- 
  []
 
 [6
 
 ]
-Overfull \hbox (4.97491pt too wide) in paragraph at lines 17--17
- [][] [][][]\EU1/MinionPro(2)/m/n/10.95 Two distinct ways to color a negation g
-adget without changing the truth values of 
+Overfull \hbox (8.10355pt too wide) in paragraph at lines 15--15
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 Left: the gadget for a clause. Right: the 
+negation gadget ensuring two liter- 
  []
 
 
-Overfull \hbox (0.77739pt too wide) in paragraph at lines 17--17
- \EU1/MinionPro(2)/m/n/10.95 the literals. Only the rightmost center vertex can
-not be given a different color by 
+Overfull \hbox (3.02756pt too wide) in paragraph at lines 16--16
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 A valid coloring of the clause gadget when
+ one variable (in this case $[][]$) is 
  []
 
 
-Overfull \hbox (13.59254pt too wide) in paragraph at lines 17--17
- \EU1/MinionPro(2)/m/n/10.95 a suitable switch between the two representations 
-or a reflection of the graph across 
+Overfull \hbox (17.9436pt too wide) in paragraph at lines 17--17
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 Two distinct ways to color a negation gadg
+et without changing the truth val- 
  []
 
 
-Overfull \hbox (1.81763pt too wide) in paragraph at lines 17--17
- \EU1/MinionPro(2)/m/n/10.95 the horizontal axis of symmetry. If the new edge i
-nvolves this vertex, we must fix 
+Overfull \hbox (3.1796pt too wide) in paragraph at lines 17--17
+ \EU1/MinionPro(2)/m/n/12 ues of the literals. Only the rightmost center vertex
+ cannot be given a dif- 
+ []
+
+
+Overfull \hbox (15.00359pt too wide) in paragraph at lines 17--17
+ \EU1/MinionPro(2)/m/n/12 ferent color by a suitable switch between the two rep
+resentations or a reflec- 
+ []
+
+
+Overfull \hbox (15.62357pt too wide) in paragraph at lines 17--17
+ \EU1/MinionPro(2)/m/n/12 tion of the graph across the horizontal axis of symme
+try. If the new edge in- 
+ []
+
+LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 10.95007pt on input line 21.
+
+LaTeX Font Warning: Font shape `EU1/SourceCodePro(0)/m/it' undefined
+(Font)              using `EU1/SourceCodePro(0)/m/n' instead on input line 21.
+
+
+Overfull \hbox (22.75157pt too wide) in paragraph at lines 21--21
+ \EU1/MinionPro(2)/m/n/12 cost $[]$. (b) Actual metro stations and their connec
+tions in downtown Chicago 
+ []
+
+
+Overfull \hbox (8.08514pt too wide) in paragraph at lines 22--22
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 Left: the graph $[]\OT1/cmr/m/n/12 ([])$\E
+U1/MinionPro(2)/m/n/12 ; Right: two $[]\OT1/cmr/m/n/12 ([])$ \EU1/MinionPro(2)/
+m/n/12 pieced together to force a connected 
+ []
+
+
+Overfull \hbox (11.88359pt too wide) in paragraph at lines 24--24
+ [][] [][][]\EU1/MinionPro(2)/m/n/12 A comparison of the formulations in [[]] a
+nd our new IP formulation with 
+ []
+
+
+Overfull \hbox (25.01958pt too wide) in paragraph at lines 24--24
+ \EU1/MinionPro(2)/m/n/12 MTZ-type constraints. This graph plots running time v
+s. (a) number of nodes 
+ []
+
+
+Overfull \hbox (18.43156pt too wide) in paragraph at lines 24--24
+ \EU1/MinionPro(2)/m/n/12 and, (b) number of edges in the target graph. In (a) 
+the number of edges was 
+ []
+
+
+Overfull \hbox (1.52756pt too wide) in paragraph at lines 24--24
+ \EU1/MinionPro(2)/m/n/12 kept at 30 throughout, while in (b) the number of nod
+es was 15 through- 
  []
 
 )
 \tf@lof=\write5
 \openout5 = `dissertation.lof'.
 
- [7] (./frontmatter/dedication.tex) [8] (./frontmatter/thanks.tex) [9
+ [7] (./dissertation.lot)
+\tf@lot=\write6
+\openout6 = `dissertation.lot'.
+
+ [8
 
 ]
+LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 9.
+ (./frontmatter/abstract.tex) [9]
 \openout2 = `chapters/introduction.aux'.
 
 
 (./chapters/introduction.tex
 Chapter 0.
-LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 9.
-
-Overfull \hbox (0.31755pt too wide) in paragraph at lines 9--18
-\EU1/MinionPro(2)/m/n/10.95 strategies with certain properties (akin to being a
- certain kind of Nash equilibrium) is NP-hard.  
- []
-
 [1
 
 
-]) [2]
+] [2] [3] [4]
+Overfull \hbox (8.9155pt too wide) in paragraph at lines 105--113
+[]\EU1/MinionPro(2)/m/n/12 A graph $[] \OT1/cmr/m/n/12 = ([]\OML/cmm/m/it/12 ; 
+[]\OT1/cmr/m/n/12 )$ \EU1/MinionPro(2)/m/n/12 is called $[]$-colorable if there
+ is an assignment $[] \OT1/cmr/m/n/12 : [] \OMS/cmsy/m/n/12 ! f[]\OML/cmm/m/it/
+12 ; []; [] ; []\OMS/cmsy/m/n/12 g$ 
+ []
+
+
+Overfull \hbox (5.21553pt too wide) in paragraph at lines 114--122
+[]\EU1/MinionPro(2)/m/n/12 The problem of \EU1/MinionPro(2)/m/it/12 boolean sat
+isfiability \EU1/MinionPro(2)/m/n/12 is the decision problem asking for a given
+ propo- 
+ []
+
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14]) [15]
 \openout2 = `chapters/chapter1.aux'.
 
  (./chapters/chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 5.
-[3
+(Font)              scaled to size 7.0pt on input line 6.
 
-
-
-] [4] [5]
-Overfull \hbox (5.25484pt too wide) in paragraph at lines 101--107
-[]\EU1/MinionPro(2)/m/n/10.95 The game we study is related to the MAX-$[]$-CUT 
-game, in which each player (vertex) chooses 
+Overfull \hbox (5.46355pt too wide) in paragraph at lines 4--16
+\EU1/MinionPro(2)/m/n/12 each neighbor $[]$ that chooses a different action fro
+m player $[]$. The natural game-theoretic 
  []
 
-[6] [7]
-LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 9.99193pt on input line 185.
+[16
 
 
-LaTeX Font Warning: Font shape `EU1/SourceCodePro(0)/m/it' undefined
-(Font)              using `EU1/SourceCodePro(0)/m/n' instead on input line 185.
 
+] [17] [18]
+Overfull \hbox (43.4115pt too wide) in paragraph at lines 83--93
+[]\EU1/MinionPro(2)/m/n/12 Then, in an influential experimental study of anti-c
+oordination in networks, Kearns et al. [[]] 
+ []
 
-[8] [9]
+[19] [20] [21] [22] [23]
 File: figures/strong-weak-welfare2s.png Graphic file (type QTm)
  <use  "figures/strong-weak-welfare2s.png" >
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 251.
-LaTeX Font Info:    Font shape `EU1/MinionPro(2)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 251.
- [10] [11]
-File: figures/k5construction.png Graphic file (type QTm)
-
-<use  "figures/k5construction.png" > [12]
-File: figures/arbitrary-k-reduction-gadget-small.png Graphic file (type QTm)
-
-<use  "figures/arbitrary-k-reduction-gadget-small.png" > [13]
-File: figures/2-coloring-clause-gadget-small.png Graphic file (type QTm)
-
-<use  "figures/2-coloring-clause-gadget-small.png" > [14]
-File: figures/clause-gadget-lemma-small.png Graphic file (type QTm)
-
-<use  "figures/clause-gadget-lemma-small.png" > [15]
-File: figures/connection-gadgets-small.png Graphic file (type QTm)
-
-<use  "figures/connection-gadgets-small.png" > [16] [17]
-File: figures/weak-twocolor-small.png Graphic file (type QTm)
-
-<use  "figures/weak-twocolor-small.png" >
-File: figures/weak-ktotwo-small.png Graphic file (type QTm)
-
-<use  "figures/weak-ktotwo-small.png" > [18]
-Overfull \hbox (13.79335pt too wide) in paragraph at lines 597--599
-\EU1/MinionPro(2)/m/n/10.95 In this chapter we defined new notions of graph col
-oring. Our results elucidated anti-coordination 
+(Font)              scaled to size 10.0pt on input line 252.
+ [24]
+[25]
+Overfull \hbox (24.95288pt too wide) in paragraph at lines 309--319
+[]\EU1/MinionPro(2)/m/n/12 To see that this bound is tight take two copies of $
+[][]$ on vertices $[][]\OML/cmm/m/it/12 ; [] ; [][]$ \EU1/MinionPro(2)/m/n/12 a
+nd $[][]\OML/cmm/m/it/12 ; [] ; [][]$ 
  []
 
-) [19]
+File: figures/k5construction.png Graphic file (type QTm)
+<use  "figures/k5construction.png" > [26]
+File: figures/arbitrary-k-reduction-gadget-small.png Graphic file (type QTm)
+
+<use  "figures/arbitrary-k-reduction-gadget-small.png" > [27]
+File: figures/2-coloring-clause-gadget-small.png Graphic file (type QTm)
+
+<use  "figures/2-coloring-clause-gadget-small.png" > [28]
+File: figures/clause-gadget-lemma-small.png Graphic file (type QTm)
+
+<use  "figures/clause-gadget-lemma-small.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29]
+File: figures/connection-gadgets-small.png Graphic file (type QTm)
+ <use  "figures/connection-gadgets-small.png" >
+Overfull \hbox (6.56752pt too wide) in paragraph at lines 473--481
+\EU1/MinionPro(2)/m/n/12 matically color all satisfied literal gadgets in $[]$.
+ We can extend this to a stable 2-coloring: 
+ []
+
+[30]
+Overfull \hbox (19.44753pt too wide) in paragraph at lines 482--487
+[]\EU1/MinionPro(2)/m/n/12 Conversely, if $[]$ has a strictly stable 2-coloring
+, then each clause gadget has a monochro- 
+ []
+
+[31]
+File: figures/weak-twocolor-small.png Graphic file (type QTm)
+ <use  "figures/weak-twocolor-small.png" > [32]
+File: figures/weak-ktotwo-small.png Graphic file (type QTm)
+
+<use  "figures/weak-ktotwo-small.png" > [33]) [34]
 \openout2 = `chapters/chapter2.aux'.
 
  (./chapters/chapter2.tex
@@ -1598,7 +1699,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 because the decision version on resilient instances
  []
 
-[20
+
+Overfull \hbox (2.55946pt too wide) in paragraph at lines 10--25
+\EU1/MinionPro(2)/m/n/12 combinatorial problem and we focus on the case of resi
+lient graph colorability. Roughly 
+ []
+
+[35
 
 
 
@@ -1608,45 +1715,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 s is not immediate because the ability to add any
  []
 
-[21] [22] [23]
+[36]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 64.
+
+[37] [38]
+Overfull \hbox (15.33725pt too wide) in paragraph at lines 119--128
+\EU1/MinionPro(2)/m/n/12 proved to $[]\OT1/cmr/m/n/12 ([][])$ \EU1/MinionPro(2)
+/m/n/12 [[]]. A line of research improved this bound still further to $[]\OT1/c
+mr/m/n/12 ([][])$ \EU1/MinionPro(2)/m/n/12 [[]]. 
+ []
+
+[39]
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 159.
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/it' will be
 (Font)              scaled to size 6.0pt on input line 159.
- [24] [25] [26]
+ [40]
+Overfull \hbox (1.49501pt too wide) in paragraph at lines 202--209
+[]\EU1/MinionPro(2)/m/n/12 For ease of notation, we prove the case where $[]$ i
+s even. For a clause $[] \OT1/cmr/m/n/12 = [][] [][]$\EU1/MinionPro(2)/m/n/12 ,
+ 
+ []
+
+[41] [42]
 File: figures/famous-graphs.png Graphic file (type QTm)
  <use  "figures/famous-graphs.png" >
 Overfull \hbox (3.86961pt too wide) in paragraph at lines 295--306
  [][] 
  []
 
-[27] [28]
-Overfull \hbox (4.51695pt too wide) in paragraph at lines 385--390
-[][]\EU1/MinionPro(2)/bx/n/10.95 Observation 2. []\EU1/MinionPro(2)/m/it/10.95 
-If $[]$-coloring is in P for $[]$-resiliently $[]$-colorable graphs, then $[][]
-$-coloring $[]$-resiliently 
- []
-
-[29]
-Overfull \hbox (5.60522pt too wide) in paragraph at lines 407--411
-[]\EU1/MinionPro(2)/m/n/10.95 This observation is used in Propositions [][]4[][
-] and [][]5[][], and follows from the fact that an $[]$-resiliently 
- []
-
+LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 306.
+LaTeX Font Info:    Font shape `EU1/MinionPro(2)/bx/n' will be
+(Font)              scaled to size 10.95pt on input line 306.
+[43] [44] [45]
 File: figures/table.png Graphic file (type QTm)
-<use  "figures/table.png" >
+ <use  "figures/table.png" >
 File: figures/zoomed-out.png Graphic file (type QTm)
- <use  "figures/zoomed-out.png" > [30] [31]
-Overfull \hbox (7.58835pt too wide) in paragraph at lines 504--515
-\EU1/MinionPro(2)/m/n/10.95 is satisfiable if and only if the graph is 3-colora
-ble), and then prove the construction is 1-resilient. 
+ <use  "figures/zoomed-out.png" >
+Overfull \hbox (4.21953pt too wide) in paragraph at lines 429--437
+\EU1/MinionPro(2)/m/n/12 silient graphs, we apply known results to show that 4-
+coloring a 1-resiliently 4-colorable 
+ []
+
+[46]
+Overfull \hbox (3.7475pt too wide) in paragraph at lines 462--468
+\EU1/MinionPro(2)/m/n/12 edge that is added. So an algorithm $[]$ which efficie
+ntly 4-colors 1-resiliently 4-colorable 
+ []
+
+[47]
+Overfull \hbox (2.33554pt too wide) in paragraph at lines 486--491
+[]\EU1/MinionPro(2)/m/n/12 Proposition [][]6[][] comes from applying Observatio
+n [][]3[][] to the lower bound of Huang [[]]. 
  []
 
 File: figures/literal-gadget.png Graphic file (type QTm)
-<use  "figures/literal-gadget.png" > [32]
+<use  "figures/literal-gadget.png" > [48]
 File: figures/clause-and-negation-gadget.png Graphic file (type QTm)
 
-<use  "figures/clause-and-negation-gadget.png" >
+<use  "figures/clause-and-negation-gadget.png" > [49]
 File: figures/clause-gadget-proof.png Graphic file (type QTm)
 
 <use  "figures/clause-gadget-proof.png" >
@@ -1655,10 +1785,10 @@ File: figures/clause-gadget-proof.png Graphic file (type QTm)
 <use  "figures/clause-gadget-proof.png" >
 File: figures/clause-gadget-proof.png Graphic file (type QTm)
 
-<use  "figures/clause-gadget-proof.png" > [33]
+<use  "figures/clause-gadget-proof.png" > [50]
 File: figures/coloring-negations.png Graphic file (type QTm)
 
-<use  "figures/coloring-negations.png" > [34]
+<use  "figures/coloring-negations.png" > [51]
 File: figures/clause-clause-example.png Graphic file (type QTm)
 
 <use  "figures/clause-clause-example.png" >
@@ -1667,195 +1797,252 @@ File: figures/clause-clause-example.png Graphic file (type QTm)
 <use  "figures/clause-clause-example.png" >
 File: figures/clause-clause-example.png Graphic file (type QTm)
 
-<use  "figures/clause-clause-example.png" > [35]) [36]
+<use  "figures/clause-clause-example.png" > [52]) [53]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex
 Chapter 3.
 
-Overfull \hbox (2.05496pt too wide) in paragraph at lines 15--26
-\EU1/MinionPro(2)/m/n/10.95 Turing machines. In addition, we prove hierarchy th
-eorems for MRC under certain complexity- 
+Overfull \hbox (55.81952pt too wide) in paragraph at lines 4--15
+\EU1/MinionPro(2)/m/n/12 In this chapter we study the MapReduce [[]] complexity
+ class (MRC) defined by Karloff et al. [[]], 
  []
 
-[37
+[54
 
 
 
-] [38] [39] [40] [41] [42]
-Overfull \hbox (1.13884pt too wide) in paragraph at lines 208--212
-\EU1/MinionPro(2)/m/n/10.95 In this section we introduce the model we will use 
-in this chapter, a uniform version of Karloff’s 
+] [55] [56] [57]
+Overfull \hbox (32.7795pt too wide) in paragraph at lines 125--140
+[]\EU1/MinionPro(2)/m/n/12 Since [[]], there has been extensive work in develop
+ing efficient algorithms in MapReduce- 
+ []
+
+[58]
+Overfull \hbox (0.6915pt too wide) in paragraph at lines 150--163
+\EU1/MinionPro(2)/m/n/12 From a complexity-theory viewpoint, MapReduce is uniqu
+e in that it combines bounds 
+ []
+
+[59] [60]
+Overfull \hbox (0.29552pt too wide) in paragraph at lines 197--201
+\EU1/MinionPro(2)/m/n/12 Karloff’s MapReduce Class (MRC), and contrast MRC to o
+ther models of parallel com- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[][][]\EU1/MinionPro(2)/m/n/10 The definitions of$[]$ were for RAMs. However, b
-ecause we wish to relate MapReduce to classical
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+[][][]\EU1/MinionPro(2)/m/n/10 The definitions of [[]] were for RAMs. However, 
+because we wish to relate MapReduce to classical
  []
 
-[43]
-Overfull \hbox (7.83441pt too wide) in paragraph at lines 261--263
-[]\EU1/MinionPro(2)/m/it/10.95 Shuffle-and-sort groups the values by key. Call 
-each of the pieces $[][] \OT1/cmr/m/n/10.95 =$ $\OMS/cmsy/m/n/10.95 f[]\OML/cmm
-/m/it/10.95 ; \OT1/cmr/m/n/10.95 ([][]\OML/cmm/m/it/10.95 ; [] ; [][]\OT1/cmr/m
-/n/10.95 )\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 :$  
+[61]
+Overfull \hbox (41.71935pt too wide) in paragraph at lines 250--252
+[]\EU1/MinionPro(2)/m/it/12 Shuffle-and-sort groups the values by key. Call eac
+h of the pieces $[][] \OT1/cmr/m/n/12 =$ $\OMS/cmsy/m/n/12 f[]\OML/cmm/m/it/12 
+; \OT1/cmr/m/n/12 ([][]\OML/cmm/m/it/12 ; [] ; [][]\OT1/cmr/m/n/12 )\OMS/cmsy/m
+/n/12 g\OML/cmm/m/it/12 :$  
+ []
+
+[62]
+Overfull \hbox (2.80577pt too wide) in paragraph at lines 272--280
+\EU1/MinionPro(2)/m/n/12 arise as separate runs of the same Turing machine $[]$
+. The Turing machine $[]\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; []; []; []\OT1/cm
+r/m/n/12 )$ 
  []
 
 
-Overfull \hbox (1.19438pt too wide) in paragraph at lines 264--266
-[]\EU1/MinionPro(2)/m/it/10.95 Assign a different copy of reducer $[][]$ to eac
-h $[][]$ (run in parallel) and set $[][] \OT1/cmr/m/n/10.95 = [][] [][]([][])$\
-EU1/MinionPro(2)/m/it/10.95 .  
+Overfull \hbox (13.12463pt too wide) in paragraph at lines 283--286
+[][]\EU1/MinionPro(2)/bx/n/12 Definition 5 \EU1/MinionPro(2)/m/n/12 (Uniform De
+terministic MRC)\EU1/MinionPro(2)/bx/n/12 . []\EU1/MinionPro(2)/m/it/12 A langu
+age $[]$ is said to be in $[]\OT1/cmr/m/n/12 [[]([])\OML/cmm/m/it/12 ; []\OT1/c
+mr/m/n/12 ([])]$ 
  []
 
-[44]
-Overfull \hbox (4.93697pt too wide) in paragraph at lines 299--302
-[]\EU1/MinionPro(2)/m/it/10.95 Letting $[][] \OT1/cmr/m/n/10.95 = []([]\OML/cmm
-/m/it/10.95 ; []; []; \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/
-10.95 ; [][] \OT1/cmr/m/n/10.95 = []([]\OML/cmm/m/it/10.95 ; []; []; \OMS/cmsy/
-m/n/10.95 ^^@\OT1/cmr/m/n/10.95 )$\EU1/MinionPro(2)/m/it/10.95 , the MRC machin
-e $[][] \OT1/cmr/m/n/10.95 = ([][]\OML/cmm/m/it/10.95 ; [][]; [] ; [][]; [][]\O
-T1/cmr/m/n/10.95 )$ 
+
+Overfull \hbox (37.50693pt too wide) in paragraph at lines 288--291
+[]\EU1/MinionPro(2)/m/it/12 Letting $[][] \OT1/cmr/m/n/12 = []([]\OML/cmm/m/it/
+12 ; []; []; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; [][] \OT1/
+cmr/m/n/12 = []([]\OML/cmm/m/it/12 ; []; []; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/1
+2 )$\EU1/MinionPro(2)/m/it/12 , the MRC machine $[][] \OT1/cmr/m/n/12 = ([][]\O
+ML/cmm/m/it/12 ; [][]; [] ; [][]; [][]\OT1/cmr/m/n/12 )$ 
  []
 
-[45] [46] [47]
-Overfull \hbox (20.38522pt too wide) in paragraph at lines 416--420
-\EU1/MinionPro(2)/m/n/10.95 the halting problem. A more careful analysis shows 
-all unary languages are even in $[]\OT1/cmr/m/n/10.95 [[] []\OML/cmm/m/it/10.95
- ; []\OT1/cmr/m/n/10.95 ]$\EU1/MinionPro(2)/m/n/10.95 , 
+[63]
+Overfull \hbox (7.40813pt too wide) in paragraph at lines 304--308
+[][]\EU1/MinionPro(2)/bx/n/12 Remark 1. []\EU1/MinionPro(2)/m/it/12 By $[]\OT1/
+cmr/m/n/12 ([]\OML/cmm/m/it/12 ; []; []; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 )$
+\EU1/MinionPro(2)/m/it/12 , we mean that the tape of $[]$ is initialized by the
+ string $\OMS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; []; []\OMS/cmsy/m/n/12 i$\EU1/M
+inionPro(2)/m/it/12 . 
  []
 
-[48]
+[64] [65]
+Overfull \hbox (3.37949pt too wide) in paragraph at lines 363--368
+[]\EU1/MinionPro(2)/m/n/12 Similarly, the MPC model uses point-to-point message
+s and Beame et. al.’s paper [[]] 
+ []
+
+[66] [67]
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 465.
+(Font)              scaled to size 8.0pt on input line 454.
 LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/sc' will be
-(Font)              scaled to size 6.0pt on input line 465.
+(Font)              scaled to size 6.0pt on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 465.
+(hyperref)                removing `math shift' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 465.
+(hyperref)                removing `superscript' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 465.
+(hyperref)                removing `math shift' on input line 454.
 
-[49] [50]
-Overfull \hbox (25.43796pt too wide) in paragraph at lines 530--535
-\EU1/MinionPro(2)/m/n/10.95 strictly stronger statement than Theorem [][]5[][].
- That is, $[] \OT1/cmr/m/n/10.95 = []([]([])) \U/msb/m/n/10.95 ( []\OT1/cmr/m/n
-/10.95 ([]([] []))$\EU1/MinionPro(2)/m/n/10.95 . 
+[68] [69] [70]
+Overfull \hbox (9.2306pt too wide) in paragraph at lines 562--575
+\EU1/MinionPro(2)/m/n/12 ing state to either the accept or reject state by comp
+uting $[] \OT1/cmr/m/n/12 = [][]([] [][]([][](\OMS/cmsy/m/n/12 ;\OML/cmm/m/it/1
+2 ; []; [][][][][][][]\OT1/cmr/m/n/12 )))$ 
  []
 
-[51] [52]
-Overfull \hbox (1.58368pt too wide) in paragraph at lines 606--609
-[]\EU1/MinionPro(2)/m/n/10.95 The second theorem is analogous for time, and say
-s that there are problems $[] \OMS/cmsy/m/n/10.95 62 []\OT1/cmr/m/n/10.95 [[][]
-\OML/cmm/m/it/10.95 ; [][]\OT1/cmr/m/n/10.95 ]$ 
+[71]
+Overfull \hbox (7.53151pt too wide) in paragraph at lines 581--588
+\EU1/MinionPro(2)/m/n/12 which can be decided by \EU1/MinionPro(2)/m/it/12 cons
+tant time \EU1/MinionPro(2)/m/n/12 MRC machines when given enough extra rounds.
+  
  []
 
-[53] [54] [55]
-Overfull \hbox (1.34714pt too wide) in paragraph at lines 704--710
-\EU1/MinionPro(2)/m/n/10.95 Lemma [][]6[][], $[] \OMS/cmsy/m/n/10.95 2 []\OT1/c
-mr/m/n/10.95 [[][]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ]$\EU1/MinionPro(2
-)/m/n/10.95 . On the other hand, because $[] \OMS/cmsy/m/n/10.95 62 []\OT1/cmr/
-m/n/10.95 ([][])$ \EU1/MinionPro(2)/m/n/10.95 and $[]\OT1/cmr/m/n/10.95 [[][]\O
-ML/cmm/m/it/10.95 ; [][]\OT1/cmr/m/n/10.95 ] \OMS/cmsy/m/n/10.95 ^^R 
+[72] [73] [74]
+Overfull \hbox (13.3357pt too wide) in paragraph at lines 704--717
+[]\EU1/MinionPro(2)/m/n/12 Let $[]\OT1/cmr/m/n/12 ([]) = [][]$ \EU1/MinionPro(2
+)/m/n/12 as in Lemma [][]6[][]. By Lemma [][]5[][], there is a $[]$ such that $
+[]\OT1/cmr/m/n/12 ([][]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 
+n 
  []
 
-[56]
-Overfull \hbox (5.5524pt too wide) in paragraph at lines 751--753
-[][]\EU1/MinionPro(2)/bx/n/10.95 Corollary 2. []\EU1/MinionPro(2)/m/it/10.95 If
- $[]\OT1/cmr/m/n/10.95 [[]([])\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ] \U/m
-sb/m/n/10.95 ( []\OT1/cmr/m/n/10.95 [[]([])\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n
-/10.95 ([])]$\EU1/MinionPro(2)/m/it/10.95 , then it follows that $[]\OT1/cmr/m/
-n/10.95 ([]([])) \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 = 
+[75]
+Overfull \hbox (43.96454pt too wide) in paragraph at lines 740--742
+[][]\EU1/MinionPro(2)/bx/n/12 Corollary 2. []\EU1/MinionPro(2)/m/it/12 If $[]\O
+T1/cmr/m/n/12 [[]([])\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 ] \U/msb/m/n/12 ( []\
+OT1/cmr/m/n/12 [[]([])\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 ([])]$\EU1/MinionPro
+(2)/m/it/12 , then it follows that $[]\OT1/cmr/m/n/12 ([]([])) \OMS/cmsy/m/n/12
+ 6\OT1/cmr/m/n/12 = 
  []
 
-[57]
-Overfull \hbox (25.31403pt too wide) in paragraph at lines 787--796
-\EU1/MinionPro(2)/m/n/10.95 cient solution, does it have one with using data lo
-cality? A negative answer implies $[]\OT1/cmr/m/n/10.95 ([]([])) \OMS/cmsy/m/n/
-10.95 6\OT1/cmr/m/n/10.95 = 
- []
+[76] [77]) [78]
+\openout2 = `chapters/chapter4.aux'.
 
-) [58]
-\openout2 = `chapters/conclusion.aux'.
-
- (./chapters/conclusion.tex
+ (./chapters/chapter4.tex
 Chapter 4.
-) [59
+[79
 
 
 
 ]
+Overfull \hbox (8.17549pt too wide) in paragraph at lines 18--30
+\EU1/MinionPro(2)/m/n/12 port, communication and power networks. Large parts of
+ these networks can be severely 
+ []
+
+[80] [81] [82]
+File: figures/simple.pdf Graphic file (type QTm)
+ <use  "figures/simple.pdf" >
+File: figures/Chicago_Loop_schematic.pdf Graphic file (type QTm)
+
+<use  "figures/Chicago_Loop_schematic.pdf" >
+LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 9.12506pt on input line 119.
+LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/m/it' will be
+(Font)              scaled to size 9.12506pt on input line 119.
+LaTeX Font Info:    Font shape `EU1/MinionPro(2)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 119.
+ [83] [84] [85] [86] [87]
+Overfull \hbox (31.46558pt too wide) in paragraph at lines 296--306
+[]\EU1/MinionPro(2)/bx/n/12 Case 1: $[][] \OML/cmm/m/it/12 > []$\EU1/MinionPro(
+2)/m/n/12 . In this case all the $[][]$ are free (since they are all connected 
+to $[]\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12 ; [] ; []\OT1/cmr/m/n/12 ([])$\EU1/M
+inionPro(2)/m/n/12 ), 
+ []
+
+[88]
+Overfull \hbox (9.10399pt too wide) in paragraph at lines 343--357
+[][]$ \EU1/MinionPro(2)/m/n/12 and construct $[][]$ from $[]$ by adding a $[]$-
+independent set as before, with $[]\OT1/cmr/m/n/12 ([]) = []([] \OMS/cmsy/m/n/1
+2 ^^@ 
+ []
+
+[89] [90] [91]
+File: figures/binary-tree-gadget.pdf Graphic file (type QTm)
+ <use  "figures/binary-tree-gadget.pdf" >
+File: figures/connected-ctex.pdf Graphic file (type QTm)
+
+<use  "figures/connected-ctex.pdf" > [92] [93] [94]
+File: figures/perf_ip_nodes.pdf Graphic file (type QTm)
+
+<use  "figures/perf_ip_nodes.pdf" >
+File: figures/perf_ip_edges.pdf Graphic file (type QTm)
+ <use  "figures/perf_ip_edges.pdf" >
+[95] [96]) [97] (./dissertation.bbl [98
+
+
+
+] [99] [100] [101] [102] [103] [104]
+[105] [106]) [107]
 \openout2 = `chapters/appendixA.aux'.
 
  (./chapters/appendixA.tex
 Appendix A.
-[60
+[108
 
 
-
-]) [61]
+]) [109]
 \openout2 = `sourcecode/resilience.aux'.
 
  (./sourcecode/resilience.tex
-LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 9.12506pt on input line 2.
 LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/bx/n' will be
 (Font)              scaled to size 9.12506pt on input line 3.
- [62
+ [110
 
 
-]
-LaTeX Font Info:    Font shape `EU1/SourceCodePro(0)/m/it' will be
-(Font)              scaled to size 9.12506pt on input line 69.
- [63]
+] [111]
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 150
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [64] [65]
-[66]) [67]
+) [112] [113]
+[114]) [115]
 \openout2 = `sourcecode/gradient.aux'.
 
- (./sourcecode/gradient.tex) [68
+ (./sourcecode/gradient.tex) [116
 
 
-] (./dissertation.bbl [69
-
-
-
-] [70]
-[71] [72] [73])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
- [74]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
- (./dissertation.aux (./chapters/introduction.aux)
-(./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux)
-(./chapters/conclusion.aux) (./chapters/appendixA.aux)
-(./sourcecode/resilience.aux) (./sourcecode/gradient.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 44.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 44.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+ (./dissertation.aux
+(./chapters/introduction.aux) (./chapters/chapter1.aux)
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+(./chapters/appendixA.aux) (./sourcecode/resilience.aux)
+(./sourcecode/gradient.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 46.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 27683 strings out of 493706
- 496395 string characters out of 6145769
- 724256 words of memory out of 5000000
- 30602 multiletter control sequences out of 15000+600000
- 14100 words of font info for 115 fonts, out of 8000000 for 9000
+ 27816 strings out of 493706
+ 498714 string characters out of 6145769
+ 727784 words of memory out of 5000000
+ 30727 multiletter control sequences out of 15000+600000
+ 12544 words of font info for 108 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 60i,12n,104p,10480b,1981s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,104p,10480b,1984s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (83 pages).
+Output written on dissertation.pdf (125 pages).
