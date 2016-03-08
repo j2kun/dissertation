@@ -4,7 +4,7 @@
 Graphs and networks are among the most basic mathematical objects known, yet
 many questions about graphs are open. In particular, many notions that are well
 understood in simple domains become much more nuanced and complicated when
-generalized to networks. This added complexity comes from the interplay between
+generalized to networks. The added complexity comes from the interplay between
 the structure of the graph and the mathematical complexities of the problem. As
 an example from game theory, two-player games are well understood, but
 $n$-player games played on a network are often much more complicated. Indeed,
@@ -48,16 +48,18 @@ certain kind of Nash equilibrium) is NP-hard.
 
 In Chapter~\ref{ch:resilience} we introduce a new model for measuring the
 complexity of a combinatorial decision problem called \emph{resilience}.
-Loosely speaking, an instance of a problem is resilient if it is satisfiable
-and remains satisfiable under small adversarial manipulations. For graph
-coloring, this corresponds to a graph which is, say, 3-colorable and remains so
-even after an adversary adds an arbitrary edge to the graph. In general, we ask
-how resilient a problem must be in order to make finding solutions tractable.
-Surprisingly, for the example of graph 3-coloring with the ability to add a
-single arbitrary edge, it remains NP-hard to find a 3-coloring. We further
-study the gradient between hardness and tractability for resilient coloring. We
-also completely characterize the complexity of resilient boolean
-satisfiability: it is either vacuous or NP-hard.
+Loosely speaking, an instance of a problem is resilient if it is a
+``yes-instance'' (i.e. it has the combinatorial property),  and remains so
+under small adversarial manipulations. Then the goal is to distinguish between
+``no-instances'' and resilient instances. For graph coloring, this corresponds
+to a graph which is, say, 3-colorable and remains so even after an adversary
+adds an arbitrary edge to the graph. In general, we ask how resilient a problem
+must be in order to make finding solutions tractable.  Surprisingly, for the
+example of graph 3-coloring with the ability to add a single arbitrary edge, it
+remains NP-hard to find a 3-coloring. We further study the gradient between
+hardness and tractability for resilient coloring. We also completely
+characterize the complexity of resilient boolean satisfiability: it is either
+vacuous or NP-hard.
 
 In Chapter~\ref{ch:mapreduce} we turn our attention to \emph{MapReduce}, a
 popular model of distributed computation which has novel constraints on
@@ -65,26 +67,26 @@ communication and space. We first refine an existing theoretical model of
 MapReduce. Then we prove a general result on the ability of a two-round
 MapReduce protocol to capture all of sublogarithmic space Turing machines.
 Finally, we prove a connection between MapReduce, the exponential time
-hypothesis, and long-standing open conjectures about complexity hierarchies
-within simultaneous time/space-bounded complexity classes (TISP). A
-simplification of this result is that the exponential time hypothesis implies a
-hierarchy within linear-space TISP, which in turn implies a hierarchy within
-MapReduce for each of the parameters of interest.
+hypothesis (ETH), and long-standing open conjectures about complexity
+hierarchies within simultaneous time/space-bounded complexity classes (TISP).
+In particular, the exponential time hypothesis implies a hierarchy within
+linear-space TISP, which in turn implies a hierarchy within MapReduce for each
+of the parameters of interest.
 
-In Chapter~\ref{ch:nanip}, we study a model of disaster recovery in a network
-called the Neighbor Aided Network Installation Problem (NANIP). This problem
-asks one to determine the optimal ordering of nodes in a graph, not necessarily
-as a path, which minimizes the cost of traversing the nodes in that order. The
-cost of traversing a node is a function of the number of neighbors that have
-already been visited. The chapter presents three contributions. First, we prove
-that NANIP is NP-hard even under convex cost functions, has no FPTAS, and more
+In Chapter~\ref{ch:nanip}, we study the Neighbor Aided Network Installation
+Problem (NANIP), which models disaster recovery in a network. This problem asks
+one to determine the optimal ordering of nodes in a graph, not necessarily as a
+path, which minimizes the cost of traversing the nodes in that order. The cost
+of traversing a node is a function of the number of neighbors that have already
+been visited. The chapter presents three contributions. First, we prove that
+NANIP is NP-hard even under convex cost functions, has no FPTAS, and more
 generally cannot be approximated to within a factor of $(1-n^{-c})$ for all
-$c>0$. Second, we disprove a conjecture of~\cite{Gutfraind14} on the optimality
-of the greedy algorithm for ``connected'' solutions of NANIP, instead showing
-that no connected algorithm can approximate NANIP to within a logarithmic
-multiplicative factor. The greedy algorithm specifically has a linear
-approximation lower bound. Third, we develop a new integer programming
-formulation of NANIP by adapting the technique of Miller, Tucker, and
+$c>0$. Second, we disprove a conjecture of Gutfraind et al.~\cite{Gutfraind14}
+on the optimality of the greedy algorithm for ``connected'' solutions of NANIP,
+instead showing that no connected algorithm can approximate NANIP to within a
+logarithmic multiplicative factor. The greedy algorithm specifically has a
+linear approximation lower bound. Third, we develop a new integer programming
+formulation of NANIP by adapting the formulation of Miller, Tucker, and
 Zemlin~\cite{miller1960integer}, and measure the improvement over the state of
 the art.~\cite{Gutfraind14}
  
@@ -93,19 +95,20 @@ the art.~\cite{Gutfraind14}
 An \emph{undirected graph} $G = (V,E)$ consists of a set of vertices $V$ and a
 set of unordered pairs called edges $E \subset V \times V$. A \emph{directed}
 graph gives orientation to the edges, i.e. the edge set $E$ are instead ordered
-pairs in $V \times V$. The \emph{degree} of a vertex is $\textup{deg}_G(v) =
-|\{e \in E : v \in e \}|$.  Sometimes when there are multiple graphs we will
-specify by denoting $V = V(G), E = E(G)$. A \emph{path} is an alternating list
-$(v_1, e_1, v_2, e_2, \dots, e_{k-1}, v_k)$ where $\forall i, e_i =
-(v_i,v_{i+1})$. An undirected graph is \emph{connected} if every pair of nodes
-$v,w \in V$ has a path connecting $v$ to $w$.
+pairs in $V \times V$. The \emph{degree} of a vertex in an undirected graph is
+$\textup{deg}_G(v) = |\{e \in E : v \in e \}|$, with \emph{in-degree} and
+\emph{out-degree} defined analogously for directed graphs. Sometimes when there
+are multiple graphs we will specify by denoting $V = V(G), E = E(G)$. A
+\emph{path} is an alternating list $(v_1, e_1, v_2, e_2, \dots, e_{k-1}, v_k)$
+where $\forall i, e_i = (v_i,v_{i+1})$. An undirected graph is \emph{connected}
+if every pair of nodes $v,w \in V$ has a path connecting $v$ to $w$.
 
 A graph $G = (V,E)$ is called $k$-colorable if there is an assignment $f:V \to \{
 1, 2, \dots, k \}$ such that for every edge $e = (u,v)$, $f(u) \neq f(v)$. I.e.
 if $\{1,\dots, k\}$ are thought of as colors, then no edge is monochromatic.
 The \emph{chromatic number} of a graph, $\chi(G)$, is the smallest integer $k$
 for which $G$ is $k$-colorable. The \emph{complete} graph $K_n$ is the
-$n$-vertex graph which has edges between every pair of vertices. The CLIQUE
+$n$-vertex graph which has an edge between every pair of vertices. The CLIQUE
 problem is the problem of determining, given an undirected graph $G$ and an
 integer $m$ as input, whether $G$ contains a subgraph isomorphic to $K_m$.
 
@@ -157,7 +160,7 @@ sense.
 
 A classical theorem from game theory called \emph{fictitious
 play}~\cite{Robinson51} gives an algorithmic method to find an equilibrium
-strategy in a variety of settings~\cite{MondererS96,Berger05,Nachbar90}.
+strategy in a variety of settings~\cite{Berger05,MondererS96,Nachbar90}.
 However, this algorithm is only guaranteed to converge, and may take
 exponentially long to do so~\cite{DaskalakisGP09}. Algorithmic game theory
 distinguishes itself in part from classical game theory in that it places a
@@ -212,10 +215,10 @@ theorem.
 
 One of the first important things one learns when studying graph theory is that
 graph coloring is hard. Recall that coloring a graph with $k$ colors assigning
-each vertex a color (a number in $\{ 1, 2, \dots, k \}$ so that no edge is
+each vertex a color (a number in $\{ 1, 2, \dots, k \}$) so that no edge is
 monochromatic. Deciding whether a graph can be colored with $k$ colors for any
-$k \geq 3$ (not to mention finding such a coloring) has no known polynomial
-time algorithm and is a classical NP-hard problem~\cite{GareyJ79}.  
+$k \geq 3$ has no known polynomial time algorithm and is a classical NP-hard
+problem~\cite{GareyJ79}.  
 
 One might naturally think graph coloring has a gradient of difficulty. Perhaps,
 as graphs get more ``complex'' it becomes algorithmically harder to figure out
@@ -257,7 +260,7 @@ efficiently find a coloring with 8 colors? The best would be to find a coloring
 with 4 colors, but this is already known to be NP-hard.~\cite{GuKh2000} The
 best known algorithms to find approximate colorings of 3-colorable graphs
 regrettably depend on the size of the graph. The best algorithm to date colors
-3-colorable graphs with $n^{0.2-\delta}$ colors.~\cite{KawarabayashiT14} 
+3-colorable graphs with $O(n^{0.19996})$ colors.~\cite{KawarabayashiT14} 
 
 The lower bounds are a bit more hopeful. It is known to be NP-hard to color a
 $k$-colorable graph using $2^{\sqrt[3]{k}}$ colors if $k$ is sufficiently
@@ -282,7 +285,7 @@ Following this thread, in addition to coloring, the main argument is that
 resilience is a natural parameter for any combinatorial search problem. One can
 formulate a resilient version of Hamiltonian path or 3D-matching or unique
 games. Indeed, in Chapter~\ref{ch:resilience} we completely characterize the
-complexity of resilient boolean satisfiability, whereby resilience means a
+complexity of resilient boolean satisfiability, where resilience means a
 formula can be satisfied even under the operation of fixing variables to truth
 values. In that case resilience does not introduce a difficulty gradient, and
 $r$-resilient $k$-SAT is either NP-hard or vacuously empty. However, we
@@ -299,17 +302,17 @@ constructing NP-hardness reductions to the study of resilience.
 
 In Chapter~\ref{ch:mapreduce} we turn to a model of computing based on the
 paradigm of MapReduce~\cite{DeanG08}. This model distributes computation
-across a number of processors and rounds in such a way that no processor has
-random access to the entire input in any round. 
+across a sublinear number of processors and rounds in such a way that no
+processor has random access to the entire input in any round. 
 
 A central open problem related to MapReduce is whether one can determine if an
-undirected graph is connected in a constant number of rounds. It can be done on
-MapReduce in $O(\log n)$ rounds~\cite{Karloff10}, but in MapReduce rounds are
-the primary complexity measure, leading one to the present problem.  More
+undirected graph is connected in a constant number of rounds. It can be solved
+on MapReduce in $O(\log n)$ rounds~\cite{Karloff10}, but in MapReduce rounds
+are the primary complexity measure, leading one to the present problem.  More
 generally, many problems on sparse graphs have unresolved complexity for the
 same reason.
 
-The conjecture is that graph connectivity cannot be done in constant rounds.
+The conjecture is that graph connectivity cannot be solved in constant rounds.
 However, there are simply no tools available for proving a lower bound on the
 complexity of a MapReduce problem. In the hopes of progress toward a lower
 bound, one would naturally ask whether tools from classical complexity theory
@@ -328,7 +331,7 @@ could shed light on conjectures about tradeoffs between time and space
 complexity. In the rest of this section we will describe the techniques used in
 Chapter~\ref{ch:mapreduce} and the basic complexity classes involved. All of
 the results we describe in the remainder of this section are common knowledge,
-and we refer the reader to the standard text of~\cite{AroraB09}.
+and we refer the reader to the standard text of Arora and Barak~\cite{AroraB09}.
 
 First, recall that $\TIME(f(n))$ is the class of decision problems solvable on
 a Turing machine using $O(f(n))$ steps, and $\SPACE(g(n))$ is the class of
@@ -414,8 +417,9 @@ the hardness reduction extends to a hardness of approximation lower bound.
 
 \section{Note}
 
-The works presented in this dissertation were published at conferences and
-journals during the course of the author's graduate studies. Specifically, the
-work in Chapter~\ref{ch:anticoordination} was published as~\cite{KunPR13},
-Chapter~\ref{ch:resilience} as~\cite{KunR14}, Chapter~\ref{ch:mapreduce}
-as~\cite{FishKLRT15}, and Chapter~\ref{ch:nanip} as~\cite{GutfraindKLR15}.
+The works presented in this dissertation were published at computer science
+conferences and mathematics journals during the course of the author's graduate
+studies. Specifically, the work in Chapter~\ref{ch:anticoordination} was
+published as~\cite{KunPR13}, Chapter~\ref{ch:resilience} as~\cite{KunR14},
+Chapter~\ref{ch:mapreduce} as~\cite{FishKLRT15}, and Chapter~\ref{ch:nanip}
+as~\cite{GutfraindKLR15}.
